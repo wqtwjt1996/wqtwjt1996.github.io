@@ -4,11 +4,15 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" content="IE=edge, chrome=1">
+    <meta name="title" content="Homepage">
+    <meta name="author" content="Pedro Morgado">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-    <title>Pedro Morgado</title>
+
+    <meta property="og:title" content="Pedro Morgado">
+    <meta property="og:image" content="img/profile.jpg">
+    <meta property="og:url" content="https://pedro-morgado.github.io/">
+    <meta property="og:type" content="website">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111354857-1"></script>
@@ -16,79 +20,110 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-111354857-1');
     </script>
 
-
     <!-- Bootstrap core CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="vendor/academicons/css/academicons.css" rel="stylesheet">
-    <link href="css/resume.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <!-- <link href="vendor/academicons/css/academicons.css" rel="stylesheet"> -->
+    
+    <!-- Custom styles for this template -->
+    <link href="creative.css" rel="stylesheet">
+
+    <style type="text/css">
+      .no-gutters>.col {
+        padding: 10px !important;
+      }
+    </style>
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        .centered {
+          max-width: 810px;
+        }
+        #examples {
+          overflow: auto;
+          margin: 0 -10px;
+        }
+        gif-player {
+          display: block;
+          margin: 10px;
+          border: 1px solid #ccc;
+        }
+      </style>
+    </custom-style>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $(".exampleVideo").height($(".exampleVideo").width() * 0.56)
+
+      })
+    </script>
   </head>
 
   <body id="page-top">
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Pedro Morgado</span>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publication">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Resume</a>
-          </li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Pedro Morgado</a> -->
+        <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="container-fluid p-0">
 
-      <section class="resume-section p-4 mx-auto p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto col-lg-10 col-sm-12 mx-auto">
-           <img id="profilePhoto" class="img-fluid img-profile rounded-circle mx-auto mb-4" src="img/profile.jpg" alt="">
-          <h2 class="mb-0 text-primary">Pedro Morgado</h2>
-          <div class="subheading mb-4">University of California, San Diego · Electrical Engineering </div>
+    <!-- About -->
+    <section class="container overview-section" id="about">
+      <div class="row col-lg-10 col-sm-12 mx-auto">
+        <div class="col-lg-4 col-sm-12 my-auto">
+          <img id="profilePhoto" class="img-fluid img-profile rounded-circle mx-auto my-auto" src="img/profile.jpg" alt="">
+        </div>
+        <div class="col-lg-8 col-sm-12 mx-auto my-auto">
+          <h2 class="mb-1">Pedro Morgado</h2>
+          <p class="subheading mb-0">PhD Candidate</p>
+          <p class="subheading mb-0">Electrical and Computer Engineering</p>
+          <p class="subheading">University of California, San Diego</p>
           
           <div class="row mt-0">
-            <!-- <p class="subheading col-2">Links:</p> -->
             <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">
-              <!-- <i class="ai ai-google-scholar-square"></i> -->
-              <p class="subheading col-2 my-0">Scholar</p>
+              <p class="lead col-2 my-0">Scholar</p>
             </a>
             <a href="https://github.com/pedro-morgado" target="_blank">
-              <!-- <i class="fab fa-github"></i> -->
-              <p class="subheading col-2 my-0">Github</p>
+              <p class="lead col-2 my-0">Github</p>
             </a>
             <a href="http://www.svcl.ucsd.edu/~morgado/files/cv.pdf" target="_blank">
-              <!-- <i class="ai ai-cv"></i> -->
-              <p class="subheading col-2 my-0">CV</p>
+              <p class="lead col-2 my-0">CV</p>
             </a>
-
             <a href="mailto:pmaravil@ucsd.edu">
-              <!-- <i class="fa fa-envelope"></i> -->
-              <p class="subheading col-2 my-0">Email</p>
+              <p class="lead col-2 my-0">Email</p>
             </a>
 
           </div>
-
-          <hr>
+        </div>
+        <div class="col-12 mx-auto pt-5 mt-4 px-0">
+          <!-- <h3 class="mb-4 px-0">About me</h3> -->
           <p class="lead">I am a Ph.D. student in the
             Statistical Visual Computing Lab <a href="http://www.svcl.ucsd.edu" target="_blank">(SVCL)</a> with Prof. <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos </a> at the University of California, San Diego</a>. Before arriving to UC San Diego, I earned both B.Sc. and M.Sc. degrees from Instituto Superior Técnico, Universidade de Lisboa in 2010 and 2012, respectively.
           </p>
@@ -99,207 +134,216 @@
             As such, I've previously worked and maintain an active interest in areas such as multi-task network design, life-long learning, zero-shot, and low-shot learning, multimodal joint embeddings for visual, audio and text embeddings.
           </p>
           <p class="lead">  
-            Before starting my Ph.D. studies, I worked in the automatic diagnosis of Alzheimer's disease, and it's onset stages from multiple brain imaging modalities such as MRI and PET.
+            Before starting my Ph.D. studies, I worked with Prof. Margarida Silveira in the automatic diagnosis of Alzheimer's disease, and it's onset stages from multiple brain imaging modalities such as MRI and PET.
           </p>
         </div>
       </section>
 
-      <hr class="m-0">
-
-      <section class="resume-section p-4 mx-auto p-lg-5 d-flex flex-column" id="publication">
-        <div class="my-auto col-lg-10 col-sm-12 mx-auto">
-          <h3 class="mb-5">Publications</h3>
-            <div class="row each_pub">
-              <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/selfSupervised.png"></div>
-              <div class="col-lg-9 col-md-9 col-sm-12">
-                <p class="pub_title">Self-Supervised Generation of Spatial Audio for 360° Video</p>
-
-                <p class="pub_author"><b>Pedro Morgado</b>, Nuno Vasconcelos, Timothy Langlois and Oliver Wang</p>
-
-                <p class="pub_venue">Advances in Neural Information Processing Systems (NIPS), Montreal, Canada, 2018.</p>
-
-                <p class="pub_supplemental"> 
-                  <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/spatialaudiogen/spatialaudiogen.pdf" target="_blank"> pdf </a> 
-                  <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/spatialaudiogen/spatialaudiogen.bib" target="_blank"> bibtex </a> 
-                  <a class="button button-website" href="https://pedro-morgado.github.io/spatialaudiogen/" target="_blank"> website </a>
-                  <a class="button button-code" href="https://github.com/pedro-morgado/spatialaudiogen" target="_blank"> code </a> 
-                  <a class="button button-arxiv" href="https://arxiv.org/abs/1809.02587" target="_blank"> arxiv </a> 
-                  <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/spatialaudiogen/poster.pdf" target="_blank"> poster</a> 
-                  </p>
-              </div>
-            </div> 
-          
-           <hr>
-           <div class="row each_pub">
-              <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/semanticallyConsistent.png"></div>
-              <div class="col-lg-9 col-md-9 col-sm-12">
-                <p class="pub_title">Semantically Consistent Regularization for Zero-Shot Recognition</p>
-
-                <p class="pub_author"><b>Pedro Morgado</b> and Nuno Vasconcelos</p>
-
-                <p class="pub_venue">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Honolulu, Hawaii, USA, 2017.</p>
-
-                <p class="pub_supplemental"> 
-                  <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/score/score-cvpr17.pdf" target="_blank"> pdf </a> 
-                  <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/score/score.bib" target="_blank"> bibtex </a>
-                  <a class="button button-code" href="https://github.com/pedro-morgado/score-zeroshot" target="_blank"> code </a> 
-                  <a class="button button-arxiv" href="https://arxiv.org/abs/1704.03039" target="_blank"> arxiv </a> 
-                  <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/publications/score/score-poster.pdf" target="_blank"> poster </a> 
-              </div>
-            </div> 
-          
-           <hr>
-           <div class="row each_pub">
-              <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid oversizeImg" src="img/publication/minimalNeighborhood.png"></div>
-              <div class="col-lg-9 col-md-9 col-sm-12">
-                <p class="pub_title"> (Journal) Minimal Neighborhood Redundancy Maximal Relevance: Application to the Diagnosis of Alzheimer's Disease</p>
-                <p class="pub_author"><b>Pedro Morgado</b> and Margarida Silveira </p>
-                <p class="pub_venue">Neurocomputing, Vol. 155, pp. 295-308, May, 2015</p>
-                <p class="pub_supplemental"> 
-                 <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr-journal/paper.pdf" target="_blank"> pdf </a> 
-                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr-journal/citation.bib" target="_blank"> bibtex </a>
-              
-                <br><br>
-                <p class="pub_title">(Conference) Efficient Selection of Non-redundant Features for the Diagnosis of Alzheimer's Disease</p>
-                <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques </p>
-                <p class="pub_venue">International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, United States, 2013</p>
-
-                <p class="pub_supplemental"> 
-                 <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr/mnrmr.pdf" target="_blank"> pdf </a>
-                  <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr/mnrmr.bib" target="_blank"> bibtex </a>
-              </div>
-            </div> 
 
 
-           <hr>
-           <div class="row each_pub">
-              <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/predictingConversion.png"></div>
-              <div class="col-lg-9 col-md-9 col-sm-12">
-                <p class="pub_title">Predicting Conversion from MCI to AD with FDG-PET Brain Images at Different Prodromal Stages</p>
-
-                <p class="pub_author">Carlos Cabral, <b>Pedro Morgado</b>, Durval Campos Costa and Margarida Silveira </p> 
-                <p class="pub_venue">Computers in Biology and Medicine, Vol. 58, pp. 101-109, March, 2015</p>
-
-                <p class="pub_supplemental"> 
-                 <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/longitudinal/paper.pdf" target="_blank"> pdf </a> 
-                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/longitudinal/citation.bib" target="_blank"> bibtex </a>
-              </div>
-            </div> 
-
-           <hr>
-           <div class="row each_pub">
-              <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid oversizeImg" src="img/publication/diagnosisOf.png"></div>
-              <div class="col-lg-9 col-md-9 col-sm-12">
-                <p class="pub_title">(Journal) Diagnosis of Alzheimer's disease using 3D Local Binary Patterns</p>
-                <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques</p> 
-                <p class="pub_venue">Computer Methods in Biomechanics and Biomedical Engineering: Imaging Visualization, Vol. 1, April, 2013</p>
-                <p class="pub_supplemental"> 
-                 <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp-journal/paper.pdf" target="_blank"> pdf </a> 
-                  <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp-journal/citation.bib" target="_blank"> bibtex </a>
-                <br><br>
-                <p class="pub_title">(Conference) Extending Local Binary Patterns to 3D for the Diagnosis of Alzheimer's Disease</p>
-                <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques </p>
-                <p class="pub_venue">International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, United States, 2013</p>
-
-                <p class="pub_supplemental"> 
-                 <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp/paper.pdf" target="_blank"> pdf </a> 
-                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp/citation.bib" target="_blank"> bibtex </a>
-                <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp/poster.pdf" target="_blank"> poster </a> 
-              </div>
-            </div>
-
-            <hr>
-            <div class="row each_pub">
-                <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/textonBased.png"></div>
-                <div class="col-lg-9 col-md-9 col-sm-12">
-                  <p class="pub_title">Texton-based Diagnosis of Alzheimer's Disease</p>
-                  <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Durval C Costa</p> 
-                  <p class="pub_venue">IEEE International Workshop on Machine Learning for Signal Processing (MLSP) Southampton, UK, 2013</p>
-
-                  <p class="pub_supplemental"> 
-                   <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/texton/texton.pdf" target="_blank"> pdf </a> 
-                  <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/texton/texton.bib" target="_blank"> bibtex </a>
-                  <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/publications/texton/texton-poster.pdf" target="_blank"> poster </a> 
-                </div>
-              </div> 
+      <!-- Publications -->
+      <section class="container resume-section" id="publications">
+        <div class="col-12">
+          <hr class="my-4">
         </div>
 
+        <div class="row col-lg-10 col-sm-12 mx-auto">
+          <h3 class="col-12 px-0">Publications</h3>
+          <p class="lead pb-3">Find my publication profile at <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+          <div class="row each_pub">
+            <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/selfSupervised.png"></div>
+            <div class="col-lg-9 col-md-9 col-sm-12">
+              <p class="pub_title">Self-Supervised Generation of Spatial Audio for 360° Video</p>
+              <p class="pub_author"><b>Pedro Morgado</b>, Nuno Vasconcelos, Timothy Langlois and Oliver Wang</p>
+              <p class="pub_venue">Advances in Neural Information Processing Systems (NIPS), Montreal, Canada, 2018.</p>
+              <p class="pub_supplemental"> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/spatialaudiogen/spatialaudiogen.pdf" target="_blank"> pdf </a> 
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/spatialaudiogen/spatialaudiogen.bib" target="_blank"> bibtex </a> 
+                <a class="button button-website" href="https://pedro-morgado.github.io/spatialaudiogen/" target="_blank"> website </a>
+                <a class="button button-code" href="https://github.com/pedro-morgado/spatialaudiogen" target="_blank"> code </a> 
+                <a class="button button-arxiv" href="https://arxiv.org/abs/1809.02587" target="_blank"> arxiv </a> 
+                <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/spatialaudiogen/poster.pdf" target="_blank"> poster</a> 
+                </p>
+            </div>
+          </div> 
+        
+          <div class="row each_pub">
+            <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/semanticallyConsistent.png"></div>
+            <div class="col-lg-9 col-md-9 col-sm-12">
+              <p class="pub_title">Semantically Consistent Regularization for Zero-Shot Recognition</p>
+              <p class="pub_author"><b>Pedro Morgado</b> and Nuno Vasconcelos</p>
+              <p class="pub_venue">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Honolulu, Hawaii, USA, 2017.</p>
+              <p class="pub_supplemental"> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/score/score-cvpr17.pdf" target="_blank"> pdf </a> 
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/score/score.bib" target="_blank"> bibtex </a>
+                <a class="button button-code" href="https://github.com/pedro-morgado/score-zeroshot" target="_blank"> code </a> 
+                <a class="button button-arxiv" href="https://arxiv.org/abs/1704.03039" target="_blank"> arxiv </a> 
+                <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/publications/score/score-poster.pdf" target="_blank"> poster </a> 
+              </p>
+            </div>
+          </div> 
+        
+          <div class="row each_pub">
+            <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
+              <img class="img-fluid oversizeImg" src="img/publication/minimalNeighborhood.png">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12">
+              <p class="pub_title"> (Journal) Minimal Neighborhood Redundancy Maximal Relevance: Application to the Diagnosis of Alzheimer's Disease</p>
+              <p class="pub_author"><b>Pedro Morgado</b> and Margarida Silveira </p>
+              <p class="pub_venue">Neurocomputing, Vol. 155, pp. 295-308, May, 2015</p>
+              <p class="pub_supplemental"> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr-journal/paper.pdf" target="_blank"> pdf </a> 
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr-journal/citation.bib" target="_blank"> bibtex </a>
+              </p>
+            
+              <br>
+              <p class="pub_title">(Conference) Efficient Selection of Non-redundant Features for the Diagnosis of Alzheimer's Disease</p>
+              <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques </p>
+              <p class="pub_venue">International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, United States, 2013</p>
+              <p class="pub_supplemental"> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr/mnrmr.pdf" target="_blank"> pdf </a>
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/mnrmr/mnrmr.bib" target="_blank"> bibtex </a>
+              </p>
+            </div>
+          </div> 
+
+
+         <div class="row each_pub">
+            <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
+              <img class="img-fluid" src="img/publication/predictingConversion.png">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12">
+              <p class="pub_title">Predicting Conversion from MCI to AD with FDG-PET Brain Images at Different Prodromal Stages</p>
+              <p class="pub_author">Carlos Cabral, <b>Pedro Morgado</b>, Durval Campos Costa and Margarida Silveira </p> 
+              <p class="pub_venue">Computers in Biology and Medicine, Vol. 58, pp. 101-109, March, 2015</p>
+              <p class="pub_supplemental"> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/longitudinal/paper.pdf" target="_blank"> pdf </a> 
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/longitudinal/citation.bib" target="_blank"> bibtex </a>
+              </p>
+            </div>
+          </div> 
+
+         <div class="row each_pub">
+            <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
+              <img class="img-fluid oversizeImg" src="img/publication/diagnosisOf.png">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12">
+              <p class="pub_title">(Journal) Diagnosis of Alzheimer's disease using 3D Local Binary Patterns</p>
+              <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques</p> 
+              <p class="pub_venue">Computer Methods in Biomechanics and Biomedical Engineering: Imaging Visualization, Vol. 1, April, 2013</p>
+              <p class="pub_supplemental"> 
+               <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp-journal/paper.pdf" target="_blank"> pdf </a> 
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp-journal/citation.bib" target="_blank"> bibtex </a>
+              <br><br>
+              <p class="pub_title">(Conference) Extending Local Binary Patterns to 3D for the Diagnosis of Alzheimer's Disease</p>
+              <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques </p>
+              <p class="pub_venue">International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, United States, 2013</p>
+              <p class="pub_supplemental"> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp/paper.pdf" target="_blank"> pdf </a> 
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp/citation.bib" target="_blank"> bibtex </a>
+                <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp/poster.pdf" target="_blank"> poster </a> 
+              </p>
+            </div>
+          </div>
+
+          <div class="row each_pub">
+            <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
+              <img class="img-fluid" src="img/publication/textonBased.png">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12">
+              <p class="pub_title">Texton-based Diagnosis of Alzheimer's Disease</p>
+              <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Durval C Costa</p> 
+              <p class="pub_venue">IEEE International Workshop on Machine Learning for Signal Processing (MLSP) Southampton, UK, 2013</p>
+              <p class="pub_supplemental"> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/texton/texton.pdf" target="_blank"> pdf </a> 
+                <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/texton/texton.bib" target="_blank"> bibtex </a>
+                <a class="button button-suppl" href="http://www.svcl.ucsd.edu/~morgado/publications/texton/texton-poster.pdf" target="_blank"> poster </a> 
+              </p>
+            </div>
+          </div> 
+        </div>
       </section>
 
-      <hr class="m-0">
 
-      <section class="resume-section p-4 mx-auto p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto col-lg-10 col-sm-12 mx-auto">
-          <h3 class="mb-3">Education</h3>
-            <div class="row each_exp">
-              <div class="col-9">
-                <p class="exp_title"> Ph.D. Student, Electrical Engineering</p>
-                <p class="exp_place"> University of California, San Diego</p>
-              </div>
-              <div class="col-3 exp_period">Current</div>
+
+      <!-- Resume -->
+      <section class="container resume-section pt-2" id="resume">
+        <div class="col-12">
+          <hr class="my-5">
+        </div>
+
+        <div class="row col-lg-10 col-sm-12 mx-auto">
+          <h3 class="mb-5 col-12 px-0">Resume</h3>
+          <h4 class="mb-3 col-12 px-0">Education</h4>
+          <div class="row each_exp col-12">
+            <div class="col-9">
+              <p class="exp_title"> Ph.D. Student, Electrical Engineering</p>
+              <p class="exp_place"> University of California, San Diego</p>
             </div>
+            <div class="col-3 exp_period">Current</div>
+          </div>
 
-            <div class="row each_exp">
-              <div class="col-9">
-                <p class="exp_title"> M.Sc., Electrical and Computer Engineering</p>
-                <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
-              </div>
-              <div class="col-3 exp_period">2012</div>
+          <div class="row each_exp col-12">
+            <div class="col-9">
+              <p class="exp_title"> M.Sc., Electrical and Computer Engineering</p>
+              <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
             </div>
+            <div class="col-3 exp_period">2012</div>
+          </div>
 
-            <div class="row each_exp">
-              <div class="col-9">
-                <p class="exp_title"> B.Sc., Electrical and Computer Engineering</p>
-                <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
-              </div>
-              <div class="col-3 exp_period">2010</div>
+          <div class="row each_exp col-12">
+            <div class="col-9">
+              <p class="exp_title"> B.Sc., Electrical and Computer Engineering</p>
+              <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
             </div>
+            <div class="col-3 exp_period">2010</div>
+          </div>
 
-          <h3 class="mb-3 mt-5">Professional Experience</h3>
+          <h4 class="mb-3 mt-5 px-0">Professional Experience</h4>
 
-          <div class="row each_exp">
-              <div class="col-9">
-                <p class="exp_title"> University of California, San Diego</p>
-                <p class="exp_place"> Graduate Student Resercher</p>
-              </div>
+          <div class="row each_exp col-12">
+            <div class="col-9">
+              <p class="exp_title"> University of California, San Diego</p>
+              <p class="exp_place"> Graduate Student Resercher</p>
+            </div>
             <div class="col-3 exp_period">2015-Now</div>
           </div>
 
 
-          <div class="row each_exp">
-              <div class="col-9">
-                <p class="exp_title"> Adobe Research, Seattle, USA</p>
-                <p class="exp_place"> Research Scientist Intern</p>
-              </div>
+          <div class="row each_exp col-12">
+            <div class="col-9">
+              <p class="exp_title"> Adobe Research, Seattle, USA</p>
+              <p class="exp_place"> Research Scientist Intern</p>
+            </div>
             <div class="col-3 exp_period">Summer, 2017</div>
           </div>
 
-          <div class="row each_exp">
-              <div class="col-9">
-                <p class="exp_title"> University of California, San Diego</p>
-                <p class="exp_place"> Teaching Assistant, Digital Signal Processing II</p>
-              </div>
+          <div class="row each_exp col-12">
+            <div class="col-9">
+              <p class="exp_title"> University of California, San Diego</p>
+              <p class="exp_place"> Teaching Assistant, Digital Signal Processing II</p>
+            </div>
             <div class="col-3 exp_period">Spring, 2016</div>
           </div>
 
-          <div class="row each_exp">
-              <div class="col-9">
-                <p class="exp_title"> Institute for Systems and Robotics, Lisbon, Portugal</p>
-                <p class="exp_place"> Graduate Reserch Assistent</p>
-              </div>
+          <div class="row each_exp col-12">
+            <div class="col-9">
+              <p class="exp_title"> Institute for Systems and Robotics, Lisbon, Portugal</p>
+              <p class="exp_place"> Graduate Reserch Assistent</p>
+            </div>
             <div class="col-3 exp_period">2012-2014</div>
           </div>
 
-          <h3 class="mb-3 mt-5">Awards & Fellowships</h3>
+          <h4 class="mb-3 mt-5">Awards & Fellowships</h4>
 
-          <div class="row each_exp">
+          <div class="row each_exp col-12">
             <div class="col-9">
               <p class="exp_title"> Outstanding reviewer</p>
             </div>
             <div class="col-3 exp_period">ICCV, 2017</div>
           </div>
 
-          <div class="row each_exp">
+          <div class="row each_exp col-12">
             <div class="col-9">
               <p class="exp_title"> Fundação para a Ciência e Tecnologia</p>
               <p class="exp_place"> Graduate Fellowship</p>
@@ -307,17 +351,16 @@
             <div class="col-3 exp_period">2015-2019</div>
           </div>
 
-          <div class="row each_exp">
+          <div class="row each_exp col-12">
             <div class="col-9">
               <p class="exp_title"> University of California, San Diego</p>
               <p class="exp_place"> Graduate Fellowship</p>
             </div>
             <div class="col-3 exp_period">2014</div>
           </div>
+        </div>
 
       </section>
-
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -327,7 +370,6 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/resume.js"></script>
 
   </body>
 
