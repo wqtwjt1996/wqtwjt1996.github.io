@@ -44,15 +44,15 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Pedro Morgado</a> -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Pedro Morgado</a>
         <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
             </li>
@@ -66,35 +66,43 @@
 
     <div class="row col-lg-8 col-sm-12 mx-auto main-pane mb-5">
     <!-- About -->
-    <section class="container mt-4" id="about">
-      <div class="row col-12 mx-auto">
+    <section class="container mt-4 mb-5" id="about">
+      <div class="row mx-auto">
         <div class="col-lg-4 col-sm-12 my-auto py-2 px-0">
-          <img id="profilePhoto" class="img-fluid img-profile mx-auto my-auto" src="img/profile.jpg" alt="">
+          <div class="row">
+            <img id="profilePhoto" class="img-fluid img-profile" src="img/profile.jpg" alt="">
+          </div>
         </div>
 
         <div class="col-lg-6 col-sm-12 mx-auto my-auto py-2 px-0">
-          <h2 class="mb-1">Pedro Morgado</h2>
-          <p class="subheading mb-0">PhD Candidate</p>
-          <p class="subheading mb-0">Electrical and Computer Engineering</p>
-          <p class="subheading">University of California, San Diego</p>
-          
-          <div class="row mt-0">
-            <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">
-              <p class="lead col-2 my-0">Scholar</p>
-            </a>
-            <a href="https://github.com/pedro-morgado" target="_blank">
-              <p class="lead col-2 my-0">Github</p>
-            </a>
-            <a href="http://www.svcl.ucsd.edu/~morgado/files/cv.pdf" target="_blank">
-              <p class="lead col-2 my-0">CV</p>
-            </a>
-            <a href="mailto:pmaravil@ucsd.edu">
-              <p class="lead col-2 my-0">Email</p>
-            </a>
+          <div class="row">
+            <div class="col-12">
+            <p class="header-1 mb-1">Pedro Morgado</p>
+            <p class="header-2 mb-0">PhD Candidate</p>
+            <p class="header-2 mb-0">Electrical and Computer Engineering</p>
+            <p class="header-2">University of California, San Diego</p>
+            
+            <div class="header-2 mt-0">
+              <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">
+                Scholar
+              </a>·
+              <a href="https://github.com/pedro-morgado" target="_blank">
+                Github
+              </a>·
+              <a href="http://www.svcl.ucsd.edu/~morgado/files/cv.pdf" target="_blank">
+                CV
+              </a>·
+              <a href="mailto:pmaravil@ucsd.edu">
+                Email
+              </a>
+            </div>
+            </div>
 
           </div>
         </div>
-        <div class="col-12 mx-auto pt-5 px-0">
+      </div>
+      <div class="row">
+        <div class="col-12 mx-auto pt-5">
           <!-- <h3 class="mb-4 px-0">About me</h3> -->
           <p class="lead">I am a Ph.D. student in the
             Statistical Visual Computing Lab <a href="http://www.svcl.ucsd.edu" target="_blank">(SVCL)</a> with <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Prof. Nuno Vasconcelos </a> at the University of California, San Diego</a>. Before arriving to UC San Diego, I earned both B.Sc. and M.Sc. degrees from Instituto Superior Técnico, Universidade de Lisboa in 2010 and 2012, respectively.
@@ -115,15 +123,15 @@
 
       <!-- Publications -->
       <div class="col-12 py-0 my-0 px-0 mx-0" id="publications">
-        <hr class="my-5">
+        <hr class="my-0">
       </div>
-      <section class="container">
-        <div class="row col-12 mx-auto">
-          <h3 class="col-12 px-0">Publications</h3>
+      <section class="container mb-5">
+        <div class="row mx-auto">
+          <h1 class="col-12 px-0">Publications</h3>
           <p class="lead pb-3">Find my publication profile at <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
           <div class="row each_pub">
             <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/selfSupervised.png"></div>
-            <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
               <p class="pub_title">Self-Supervised Generation of Spatial Audio for 360° Video</p>
               <p class="pub_author"><b>Pedro Morgado</b>, Nuno Vasconcelos, Timothy Langlois and Oliver Wang</p>
               <p class="pub_venue">Advances in Neural Information Processing Systems (NIPS), Montreal, Canada, 2018.</p>
@@ -140,7 +148,7 @@
         
           <div class="row each_pub">
             <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto"><img class="img-fluid" src="img/publication/semanticallyConsistent.png"></div>
-            <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
               <p class="pub_title">Semantically Consistent Regularization for Zero-Shot Recognition</p>
               <p class="pub_author"><b>Pedro Morgado</b> and Nuno Vasconcelos</p>
               <p class="pub_venue">IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Honolulu, Hawaii, USA, 2017.</p>
@@ -158,7 +166,7 @@
             <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
               <img class="img-fluid oversizeImg" src="img/publication/minimalNeighborhood.png">
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
               <p class="pub_title"> (Journal) Minimal Neighborhood Redundancy Maximal Relevance: Application to the Diagnosis of Alzheimer's Disease</p>
               <p class="pub_author"><b>Pedro Morgado</b> and Margarida Silveira </p>
               <p class="pub_venue">Neurocomputing, Vol. 155, pp. 295-308, May, 2015</p>
@@ -183,7 +191,7 @@
             <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
               <img class="img-fluid" src="img/publication/predictingConversion.png">
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
               <p class="pub_title">Predicting Conversion from MCI to AD with FDG-PET Brain Images at Different Prodromal Stages</p>
               <p class="pub_author">Carlos Cabral, <b>Pedro Morgado</b>, Durval Campos Costa and Margarida Silveira </p> 
               <p class="pub_venue">Computers in Biology and Medicine, Vol. 58, pp. 101-109, March, 2015</p>
@@ -198,7 +206,7 @@
             <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
               <img class="img-fluid oversizeImg" src="img/publication/diagnosisOf.png">
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
               <p class="pub_title">(Journal) Diagnosis of Alzheimer's disease using 3D Local Binary Patterns</p>
               <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques</p> 
               <p class="pub_venue">Computer Methods in Biomechanics and Biomedical Engineering: Imaging Visualization, Vol. 1, April, 2013</p>
@@ -222,7 +230,7 @@
             <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
               <img class="img-fluid" src="img/publication/textonBased.png">
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
               <p class="pub_title">Texton-based Diagnosis of Alzheimer's Disease</p>
               <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Durval C Costa</p> 
               <p class="pub_venue">IEEE International Workshop on Machine Learning for Signal Processing (MLSP) Southampton, UK, 2013</p>
@@ -240,95 +248,98 @@
 
       <!-- Resume -->
       <div class="col-12 py-0 my-0 px-0 mx-0" id="resume">
-        <hr class="my-5">
+        <hr class="my-0">
       </div>
       <section class="container mb-5">
-        <div class="row col-12 mx-auto">
-          <h3 class="mb-5 col-12 px-0">Resume</h3>
-          <h4 class="mb-3 col-12 px-0">Education</h4>
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> Ph.D. Student, Electrical Engineering</p>
-              <p class="exp_place"> University of California, San Diego</p>
+        <div class="row mx-auto">
+          <div class="col-12">
+            <h1 class="mb-5 col-12 px-0">Resume</h1>
+            <h2 class="mb-3 col-12 px-0">Education</h2>
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> Ph.D. Student, Electrical Engineering</p>
+                <p class="exp_place"> University of California, San Diego</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">Current</div>
             </div>
-            <div class="col-3 exp_period">Current</div>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> M.Sc., Electrical and Computer Engineering</p>
+                <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">2012</div>
+            </div>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> B.Sc., Electrical and Computer Engineering</p>
+                <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">2010</div>
+            </div>
+
+            <h2 class="mb-3 mt-5 px-0">Professional Experience</h2>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> University of California, San Diego</p>
+                <p class="exp_place"> Graduate Student Resercher</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">2015-Now</div>
+            </div>
+
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> Adobe Research, Seattle, USA</p>
+                <p class="exp_place"> Research Scientist Intern</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">Summer, 2017</div>
+            </div>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> University of California, San Diego</p>
+                <p class="exp_place"> Teaching Assistant, Digital Signal Processing II</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">Spring, 2016</div>
+            </div>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> Institute for Systems and Robotics, Lisbon, Portugal</p>
+                <p class="exp_place"> Graduate Reserch Assistent</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">2012-2014</div>
+            </div>
+
+            <h2 class="mb-3 mt-5">Awards & Fellowships</h2>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> Outstanding reviewer</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">ICCV, 2017</div>
+            </div>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> Fundação para a Ciência e Tecnologia</p>
+                <p class="exp_place"> Graduate Fellowship</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">2015-2019</div>
+            </div>
+
+            <div class="row each_exp">
+              <div class="col-lg-9 col-sm-12">
+                <p class="exp_title"> University of California, San Diego</p>
+                <p class="exp_place"> Graduate Fellowship</p>
+              </div>
+              <div class="col-lg-3 col-sm-12 exp_period">2014</div>
+            </div>
           </div>
 
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> M.Sc., Electrical and Computer Engineering</p>
-              <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
-            </div>
-            <div class="col-3 exp_period">2012</div>
-          </div>
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> B.Sc., Electrical and Computer Engineering</p>
-              <p class="exp_place"> Instituto Superior Técnico, Lisbon, Portugal</p>
-            </div>
-            <div class="col-3 exp_period">2010</div>
-          </div>
-
-          <h4 class="mb-3 mt-5 px-0">Professional Experience</h4>
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> University of California, San Diego</p>
-              <p class="exp_place"> Graduate Student Resercher</p>
-            </div>
-            <div class="col-3 exp_period">2015-Now</div>
-          </div>
-
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> Adobe Research, Seattle, USA</p>
-              <p class="exp_place"> Research Scientist Intern</p>
-            </div>
-            <div class="col-3 exp_period">Summer, 2017</div>
-          </div>
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> University of California, San Diego</p>
-              <p class="exp_place"> Teaching Assistant, Digital Signal Processing II</p>
-            </div>
-            <div class="col-3 exp_period">Spring, 2016</div>
-          </div>
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> Institute for Systems and Robotics, Lisbon, Portugal</p>
-              <p class="exp_place"> Graduate Reserch Assistent</p>
-            </div>
-            <div class="col-3 exp_period">2012-2014</div>
-          </div>
-
-          <h4 class="mb-3 mt-5">Awards & Fellowships</h4>
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> Outstanding reviewer</p>
-            </div>
-            <div class="col-3 exp_period">ICCV, 2017</div>
-          </div>
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> Fundação para a Ciência e Tecnologia</p>
-              <p class="exp_place"> Graduate Fellowship</p>
-            </div>
-            <div class="col-3 exp_period">2015-2019</div>
-          </div>
-
-          <div class="row each_exp col-12">
-            <div class="col-9">
-              <p class="exp_title"> University of California, San Diego</p>
-              <p class="exp_place"> Graduate Fellowship</p>
-            </div>
-            <div class="col-3 exp_period">2014</div>
-          </div>
         </div>
 
       </section>
@@ -342,6 +353,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
 
   </body>
 
