@@ -37,35 +37,6 @@
     <!-- Custom styles for this template -->
     <link href="creative.css" rel="stylesheet">
 
-    <style type="text/css">
-      .no-gutters>.col {
-        padding: 10px !important;
-      }
-    </style>
-    <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-        .centered {
-          max-width: 810px;
-        }
-        #examples {
-          overflow: auto;
-          margin: 0 -10px;
-        }
-        gif-player {
-          display: block;
-          margin: 10px;
-          border: 1px solid #ccc;
-        }
-      </style>
-    </custom-style>
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $(".exampleVideo").height($(".exampleVideo").width() * 0.56)
-
-      })
-    </script>
   </head>
 
   <body id="page-top">
@@ -93,14 +64,15 @@
       </div>
     </nav>
 
-
+    <div class="row col-lg-8 col-sm-12 mx-auto main-pane mb-5">
     <!-- About -->
-    <section class="container overview-section" id="about">
-      <div class="row col-lg-10 col-sm-12 mx-auto">
-        <div class="col-lg-4 col-sm-12 my-auto">
-          <img id="profilePhoto" class="img-fluid img-profile rounded-circle mx-auto my-auto" src="img/profile.jpg" alt="">
+    <section class="container mt-4" id="about">
+      <div class="row col-12 mx-auto">
+        <div class="col-lg-4 col-sm-12 my-auto py-2 px-0">
+          <img id="profilePhoto" class="img-fluid img-profile mx-auto my-auto" src="img/profile.jpg" alt="">
         </div>
-        <div class="col-lg-8 col-sm-12 mx-auto my-auto">
+
+        <div class="col-lg-6 col-sm-12 mx-auto my-auto py-2 px-0">
           <h2 class="mb-1">Pedro Morgado</h2>
           <p class="subheading mb-0">PhD Candidate</p>
           <p class="subheading mb-0">Electrical and Computer Engineering</p>
@@ -122,10 +94,10 @@
 
           </div>
         </div>
-        <div class="col-12 mx-auto pt-5 mt-4 px-0">
+        <div class="col-12 mx-auto pt-5 px-0">
           <!-- <h3 class="mb-4 px-0">About me</h3> -->
           <p class="lead">I am a Ph.D. student in the
-            Statistical Visual Computing Lab <a href="http://www.svcl.ucsd.edu" target="_blank">(SVCL)</a> with Prof. <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos </a> at the University of California, San Diego</a>. Before arriving to UC San Diego, I earned both B.Sc. and M.Sc. degrees from Instituto Superior Técnico, Universidade de Lisboa in 2010 and 2012, respectively.
+            Statistical Visual Computing Lab <a href="http://www.svcl.ucsd.edu" target="_blank">(SVCL)</a> with <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Prof. Nuno Vasconcelos </a> at the University of California, San Diego</a>. Before arriving to UC San Diego, I earned both B.Sc. and M.Sc. degrees from Instituto Superior Técnico, Universidade de Lisboa in 2010 and 2012, respectively.
           </p>
           <!-- <hr> -->
           <p class="lead mb-2">
@@ -142,12 +114,11 @@
 
 
       <!-- Publications -->
-      <section class="container resume-section" id="publications">
-        <div class="col-12">
-          <hr class="my-4">
-        </div>
-
-        <div class="row col-lg-10 col-sm-12 mx-auto">
+      <div class="col-12 py-0 my-0 px-0 mx-0" id="publications">
+        <hr class="my-5">
+      </div>
+      <section class="container">
+        <div class="row col-12 mx-auto">
           <h3 class="col-12 px-0">Publications</h3>
           <p class="lead pb-3">Find my publication profile at <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
           <div class="row each_pub">
@@ -232,8 +203,9 @@
               <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques</p> 
               <p class="pub_venue">Computer Methods in Biomechanics and Biomedical Engineering: Imaging Visualization, Vol. 1, April, 2013</p>
               <p class="pub_supplemental"> 
-               <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp-journal/paper.pdf" target="_blank"> pdf </a> 
+                <a class="button button-pdf" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp-journal/paper.pdf" target="_blank"> pdf </a> 
                 <a class="button button-bibtex" href="http://www.svcl.ucsd.edu/~morgado/publications/lbp-journal/citation.bib" target="_blank"> bibtex </a>
+              </p>
               <br><br>
               <p class="pub_title">(Conference) Extending Local Binary Patterns to 3D for the Diagnosis of Alzheimer's Disease</p>
               <p class="pub_author"><b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques </p>
@@ -246,7 +218,7 @@
             </div>
           </div>
 
-          <div class="row each_pub">
+          <div class="row each_pub" style="border:none">
             <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center my-auto">
               <img class="img-fluid" src="img/publication/textonBased.png">
             </div>
@@ -267,12 +239,11 @@
 
 
       <!-- Resume -->
-      <section class="container resume-section pt-2" id="resume">
-        <div class="col-12">
-          <hr class="my-5">
-        </div>
-
-        <div class="row col-lg-10 col-sm-12 mx-auto">
+      <div class="col-12 py-0 my-0 px-0 mx-0" id="resume">
+        <hr class="my-5">
+      </div>
+      <section class="container mb-5">
+        <div class="row col-12 mx-auto">
           <h3 class="mb-5 col-12 px-0">Resume</h3>
           <h4 class="mb-3 col-12 px-0">Education</h4>
           <div class="row each_exp col-12">
@@ -361,6 +332,7 @@
         </div>
 
       </section>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
