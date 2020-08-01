@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedro Morgado</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" content="IE=edge, chrome=1">
+    <meta name="title" content="Pedro's homepage">
+    <meta name="author" content="Pedro Morgado">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+
+    <meta property="og:title" content="Pedro Morgado">
+    <meta property="og:image" content="img/profile.jpg">
+    <meta property="og:url" content="https://pedro-morgado.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap and JQuery-->
+    <link href="/vendor/bootstrap/bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/vendor/jquery/jquery-3.5.1.min.js"></script>
+
+   <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Custom styles -->
+    <link href="/assets/css/home.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">Pedro Morgado</a>
+    <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#resume">Vitae</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row col-lg-8 col-sm-12 mx-auto main-pane mb-5">
+
+  <!-- About -->
+  <section class="container mt-4 mb-5" id="about">
+    <div class="row mx-auto">
+      <div class="col-lg-4 col-sm-12 my-auto py-2 px-0">
+        <div class="row">
+          <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 mx-auto my-auto py-2 px-0">
+        <div class="row">
+          <div class="col-12">
+            <p class="header-1 mb-1">{{ site.data.info.name }}</p>
+            <p class="header-2 mb-0">{{ site.data.info.position }}</p>
+            {% for x in site.data.info.institution %}
+              <p class="header-2 mb-0">{{ x }}</p>
+            {% endfor %}
+
+            <div class="header-2 mt-2">
+              Links:
+              {% for link in site.data.info.links %}
+              <a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a>,
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mx-auto pt-5">
+        <p class="lead">
+          I am a Ph.D. candidate in the Statistical Visual Computing Lab <a href="http://www.svcl.ucsd.edu" target="_blank">(SVCL)</a> with <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Prof. Nuno Vasconcelos </a> at the University of California, San Diego</a>. Before arriving to UC San Diego, I earned both B.Sc. and M.Sc. degrees from Instituto Superior Técnico, Universidade de Lisboa in 2010 and 2012, respectively.
+        </p>
+        <p class="lead mb-2">
+          The focus of my research lies in the intersection between machine learning and computer vision. I am interested in <b> designing deep learning models </b> that are capable of <b> accumulating wisdom </b> over time, from <b>sporadic encounters with data </b>, without <b>forgetting previously acquired knowledge</b>.
+          As such, I've previously worked and maintain an active interest in areas such as multi-task network design, life-long learning, zero-shot, and low-shot learning, multimodal joint embeddings for visual, audio and text embeddings.
+        </p>
+        <p class="lead">
+          Before starting my Ph.D. studies, I worked with Prof. <a href="http://users.isr.ist.utl.pt/~msilveira/" target="_blank">Margarida Silveira</a> in the automatic diagnosis of Alzheimer's disease and its onset stages, from multiple brain imaging modalities such as MRI and PET.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <div class="col-12 py-0 my-0 px-0 mx-0" id="publications">
+    <hr class="my-0">
+  </div>
+  <section class="container mb-5">
+    <div class="row mx-auto">
+      <h1 class="col-12 px-0">Publications</h1>
+      <p class="lead pb-3">Find my publication profile at <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+
+      {% assign sorted = site.publications | sort: 'year' | reverse %}
+      {% for pub in sorted %}
+      <div class="row each_pub">
+        <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3 text-center">
+          <img class="img-fluid px-3" src="{{ pub.thumbnail }}">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
+          <p class="pub_title">{{ pub.title }}</p>
+          <p class="pub_author">{{ pub.authors }}</p>
+          <p class="pub_venue">{{ pub.venue }}</p>
+          <p class="pub_supplemental">
+            {% assign hasbib = False %}
+            {% for link in pub.links %}
+              {% if link[0] == "bibtex" %}
+                {% assign hasbib = True %} <!-- Bibtext -->
+                <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ publication }}" role="button" aria-expanded="false" aria-controls="collapse{{ publication }}">
+                  {{ link[0] }}
+                </a>
+              {% else %} <!-- Other links -->
+                <a class="button button-{{link[0]}}" href="{{ link[1] }}" target="_blank">
+                  {{ link[0] }}
+                </a>
+              {% endif %}
+            {% endfor %}
+
+            <!-- Add bitext content -->
+            {% if hasbib == True %}
+              <div class="collapse" id="collapse{{ publication }}">
+                <div class="card card-body">
+                  <embed type="text/html" src="{{ pub.links.bibtex }}">
+                </div>
+              </div>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <div class="col-12 py-0 my-0 px-0 mx-0" id="resume">
+    <hr class="my-0">
+  </div>
+  <section class="container mb-5">
+    <div class="row mx-auto">
+      <div class="col-12">
+        <h1 class="mb-5 col-12 px-0">Resume</h1>
+
+        <!-- Education -->
+        <h2 class="mb-3 col-12 px-0">Education</h2>
+        {% for edu in site.data.education %}
+        <div class="row each_exp">
+          <div class="col-lg-9 col-sm-12">
+            <p class="exp_title"> {{ edu.institution }} </p>
+            <p class="exp_place"> {{ edu.position }} </p>
+          </div>
+          <div class="col-lg-3 col-sm-12 exp_period"> {{ edu.time }} </div>
+        </div>
+        {% endfor %}
+
+        <!-- Work -->
+        <h2 class="mb-3 mt-5 px-0">Professional Experience</h2>
+        {% for work in site.data.work %}
+        <div class="row each_exp">
+          <div class="col-lg-9 col-sm-12">
+            <p class="exp_title"> {{ work.institution }} </p>
+            <p class="exp_place"> {{ work.position }} </p>
+          </div>
+          <div class="col-lg-3 col-sm-12 exp_period">{{ work.time }}</div>
+        </div>
+        {% endfor %}
+
+        <!-- Awards -->
+        <h2 class="mb-3 mt-5">Awards & Fellowships</h2>
+        {% for award in site.data.awards %}
+        <div class="row each_exp">
+          <div class="col-lg-9 col-sm-12">
+            <p class="exp_title"> {{ award.title }} </p>
+            <p class="exp_place"> {{ award.description }}</p>
+          </div>
+          <div class="col-lg-3 col-sm-12 exp_period">{{ award.time }}</div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="/vendor/jquery/jquery-3.5.1.min.js"></script>
+<script src="/vendor/bootstrap/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

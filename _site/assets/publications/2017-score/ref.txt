@@ -1,0 +1,7 @@
+@inproceedings{morgadoCVPR17,
+  title={Semantically Consistent Regularization for Zero-Shot Recognition},
+  author={Pedro Morgado and Nuno Vasconcelos},
+  booktitle={Computer Vision and Pattern Recognition (CVPR), IEEE Conf.~on},
+  year={2017},
+  organization={IEEE}
+}
