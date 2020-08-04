@@ -1,4 +1,5 @@
 ---
+id:             2019-nettailor
 title:          "NetTailor: Tuning the Architecture, Not Just the Weights"
 authors:        <b>Pedro Morgado</b> and Nuno Vasconcelos
 venue:          IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Long Beach, CA, 2019.

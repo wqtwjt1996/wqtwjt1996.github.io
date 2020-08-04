@@ -13,7 +13,7 @@
     <meta property="og:image" content="img/profile.jpg">
     <meta property="og:url" content="https://pedro-morgado.github.io/">
     <meta property="og:type" content="website">
-  
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111354857-1"></script>
     <script>
@@ -133,7 +133,7 @@
             {% for link in pub.links %}
               {% if link[0] == "bibtex" %}
                 {% assign hasbib = True %} <!-- Bibtext -->
-                <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ publication }}" role="button" aria-expanded="false" aria-controls="collapse{{ publication }}">
+                <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ pub.id }}" role="button" aria-expanded="false" aria-controls="collapse{{ pub.id }}">
                   {{ link[0] }}
                 </a>
               {% else %} <!-- Other links -->
@@ -142,16 +142,46 @@
                 </a>
               {% endif %}
             {% endfor %}
-
             <!-- Add bitext content -->
             {% if hasbib == True %}
-              <div class="collapse" id="collapse{{ publication }}">
-                <div class="card card-body">
-                  <embed type="text/html" src="{{ pub.links.bibtex }}">
-                </div>
+            <div class="collapse" id="collapse{{ pub.id }}">
+              <div class="card card-body">
+                <embed type="text/html" src="{{ pub.links.bibtex }}">
               </div>
+            </div>
             {% endif %}
           </p>
+
+
+          <!--Alternative venues-->
+          {% if pub.other_venues %}
+          {% for pub2 in pub.other_venues %}
+          <p class="pub_author mt-3">{{ pub2.title }}<br>{{ pub2.venue }}</p>
+          <p class="pub_supplemental">
+            {% assign hasbib2 = False %}
+            {% for link in pub2.links %}
+              {% if link[0] == "bibtex" %}
+                {% assign hasbib2 = True %} <!-- Bibtext -->
+                <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ pub.id }}" role="button" aria-expanded="false" aria-controls="collapse{{ pub.id }}">
+                  {{ link[0] }}
+                </a>
+              {% else %} <!-- Other links -->
+                <a class="button button-{{link[0]}}" href="{{ link[1] }}" target="_blank">
+                  {{ link[0] }}
+                </a>
+              {% endif %}
+            {% endfor %}
+            <!-- Add bitext content -->
+            {% if hasbib2 == True %}
+            <div class="collapse" id="collapse{{ pub.id }}2">
+              <div class="card card-body">
+                <embed type="text/html" src="{{ pub2.links.bibtex }}">
+              </div>
+            </div>
+            {% endif %}
+          </p>
+          {% endfor %}
+          {% endif %}
         </div>
       </div>
       {% endfor %}

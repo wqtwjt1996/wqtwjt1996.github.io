@@ -1,4 +1,5 @@
 ---
+id:             2013-lbp-isbi
 title:          Extending Local Binary Patterns to 3D for the Diagnosis of Alzheimer's Disease
 authors:        <b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques
 venue:          International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, 2013.

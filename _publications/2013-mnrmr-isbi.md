@@ -1,4 +1,5 @@
 ---
+id:             2013-mnrmr-isbi
 title:          "Efficient Selection of Non-redundant Features for the Diagnosis of Alzheimer's Disease"
 authors:        <b>Pedro Morgado</b>, Margarida Silveira and Jorge S Marques
 venue:          International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, 2013.

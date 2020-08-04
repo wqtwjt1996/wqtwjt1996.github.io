@@ -1,4 +1,5 @@
 ---
+id:             2015-ad-conversion
 title:          "Predicting Conversion from MCI to AD with FDG-PET Brain Images at Different Prodromal Stages"
 authors:        Carlos Cabral, <b>Pedro Morgado</b>, Durval Campos Costa and Margarida Silveira
 venue:          Computers in Biology and Medicine, Vol. 58, pp. 101-109, March, 2015

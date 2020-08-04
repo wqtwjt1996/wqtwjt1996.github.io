@@ -1,4 +1,5 @@
 ---
+id:             2020-realistic-ltr
 title:          "Solving Long-tailed Recognition with Deep Realistic Taxonomic Classifier"
 authors:        Tz-Ying Wu, <b>Pedro Morgado</b>, Pei Wang, Chih-Hui Ho, and Nuno Vasconcelos
 venue:          European Conference on Computer Vision (ECCV), <strike>Glasgow, UK</strike>, Virtual, 2020.

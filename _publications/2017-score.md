@@ -1,4 +1,5 @@
 ---
+id:             2017-score
 title:          Semantically Consistent Regularization for Zero-Shot Recognition
 authors:        <b>Pedro Morgado</b> and Nuno Vasconcelos
 venue:          IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Honolulu, Hawaii, 2017.
