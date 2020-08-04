@@ -116,7 +116,7 @@
   <section class="container mb-5">
     <div class="row mx-auto">
       <h1 class="col-12 px-0">Publications</h1>
-      <p class="lead pb-3">Find my publication profile at <a href="https://scholar.google.pt/citations?user=_ntLSQ4AAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+      <p class="lead pb-3">Find my publication profile at <a href="{{ site.data.info.links.Scholar }}" target="_blank">Google Scholar</a>.</p>
 
       {% assign sorted = site.publications | sort: 'year' | reverse %}
       {% for pub in sorted %}

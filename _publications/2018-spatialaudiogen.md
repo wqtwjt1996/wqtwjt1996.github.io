@@ -12,5 +12,6 @@ links:
     code:       https://github.com/pedro-morgado/spatialaudiogen
     data:       https://github.com/pedro-morgado/spatialaudiogen
     bibtex:     assets/publications/2018-spatialaudiogen/ref.txt
+    video:      https://www.youtube.com/watch?v=SXFUr2GkxS8
     poster:     assets/publications/2018-spatialaudiogen/poster.pdf
 ---

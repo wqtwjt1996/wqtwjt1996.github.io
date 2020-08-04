@@ -384,29 +384,15 @@ img:hover {
   opacity: 1;
 }
 
-.button-pdf {
+.button-pdf, .button-suppl {
   background-color: #66A4CC;
   color: white;
   border: 2px solid #66A4CC;
 }
 
-.button-pdf:hover {
+.button-pdf:hover, .button-suppl:hover {
   background-color: white;
   color: black;
-  border: 2px solid #66A4CC;
-  text-decoration: none;
-}
-
-.button-suppl {
-  background-color: #66A4CC;
-  color: white;
-  border: 2px solid #66A4CC;
-}
-
-.button-suppl:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid #66A4CC;
   text-decoration: none;
 }
 
@@ -419,7 +405,6 @@ img:hover {
 .button-arxiv:hover {
   background-color: white;
   color: black;
-  border: 2px solid #8582CC;
   text-decoration: none;
 }
 
@@ -432,7 +417,6 @@ img:hover {
 .button-website:hover {
   background-color: white;
   color: black;
-  border: 2px solid #CC6666;
   text-decoration: none;
 }
 
@@ -445,46 +429,30 @@ img:hover {
 .button-bibtex:hover {
   background-color: white;
   color: black;
-  border: 2px solid #A6A6A6;
   text-decoration: none;
 }
 
-.button-code {
+.button-code, .button-data {
   background-color: #5EBC79;
   color: white;
   border: 2px solid #5EBC79;
 }
 
-.button-code:hover {
+.button-code:hover, .button-data:hover {
   background-color: white;
   color: black;
-  border: 2px solid #5EBC79;
   text-decoration: none;
 }
 
-.button-data {
-  background-color: #5EBC79;
-  color: white;
-  border: 2px solid #5EBC79;
-}
-
-.button-data:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid #5EBC79;
-  text-decoration: none;
-}
-
-.button-poster {
+.button-video, .button-talk, .button-poster {
   background-color: #CCAB66;
   color: white;
   border: 2px solid #CCAB66;
 }
 
-.button-poster:hover {
+.button-video:hover, .button-talk:hover, .button-poster:hover {
   background-color: white;
   color: black;
-  border: 2px solid #CCAB66;
   text-decoration: none;
 }
 
