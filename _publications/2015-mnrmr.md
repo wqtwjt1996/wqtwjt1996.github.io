@@ -8,4 +8,11 @@ thumbnail:      assets/publications/2015-mnrmr/thumbnail.jpg
 links:
     pdf:        assets/publications/2015-mnrmr/paper.pdf
     bibtex:     assets/publications/2015-mnrmr/ref.txt
+other_venues:
+    - title:    "Efficient Selection of Non-redundant Features for the Diagnosis of Alzheimer's Disease"
+      venue:    International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, 2013.
+      links:
+        pdf:        assets/publications/2013-mnrmr-isbi/paper.pdf
+        bibtex:     assets/publications/2013-mnrmr-isbi/ref.txt
+        poster:     assets/publications/2013-mnrmr-isbi/poster.pdf
 ---

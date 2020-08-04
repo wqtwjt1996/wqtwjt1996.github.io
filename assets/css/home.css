@@ -487,3 +487,10 @@ img:hover {
   border: 2px solid #CCAB66;
   text-decoration: none;
 }
+
+.button-empty {
+  background-color: white;
+  color: black;
+  border: 2px solid gray;
+  text-decoration: none;
+}

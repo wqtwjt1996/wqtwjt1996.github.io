@@ -150,19 +150,26 @@
               </div>
             </div>
             {% endif %}
+            <!--No links-->
+            {% if pub.links %}
+            {% else %}
+            <a class="button button-empty" target="_blank">Content coming soon!</a>
+            {% endif %}
           </p>
 
 
           <!--Alternative venues-->
           {% if pub.other_venues %}
           {% for pub2 in pub.other_venues %}
-          <p class="pub_author mt-3">{{ pub2.title }}<br>{{ pub2.venue }}</p>
+          <p class="pub_title mt-3">{{ pub2.title }}</p>
+          <p class="pub_author">{{ pub.authors}}</p>
+          <p class="pub_venue">{{ pub2.venue }}</p>
           <p class="pub_supplemental">
             {% assign hasbib2 = False %}
             {% for link in pub2.links %}
               {% if link[0] == "bibtex" %}
                 {% assign hasbib2 = True %} <!-- Bibtext -->
-                <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ pub.id }}" role="button" aria-expanded="false" aria-controls="collapse{{ pub.id }}">
+                <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ pub.id }}2" role="button" aria-expanded="false" aria-controls="collapse{{ pub.id }}2">
                   {{ link[0] }}
                 </a>
               {% else %} <!-- Other links -->
@@ -178,6 +185,11 @@
                 <embed type="text/html" src="{{ pub2.links.bibtex }}">
               </div>
             </div>
+            {% endif %}
+            <!--No links-->
+            {% if pub2.links %}
+            {% else %}
+            <a class="button button-empty" target="_blank">Content coming soon!</a>
             {% endif %}
           </p>
           {% endfor %}
