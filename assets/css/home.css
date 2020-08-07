@@ -444,13 +444,13 @@ img:hover {
   text-decoration: none;
 }
 
-.button-video, .button-talk, .button-poster {
+.button-video, .button-talk, .button-poster, .button-summary {
   background-color: #CCAB66;
   color: white;
   border: 2px solid #CCAB66;
 }
 
-.button-video:hover, .button-talk:hover, .button-poster:hover {
+.button-video:hover, .button-talk:hover, .button-poster:hover, .button-summary:hover {
   background-color: white;
   color: black;
   text-decoration: none;
