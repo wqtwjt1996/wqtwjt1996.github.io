@@ -208,6 +208,11 @@ img::-moz-selection {
   margin: auto;
 }
 
+.pub-thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
 #mainNav .navbar-brand {
   font-weight: 400;
   text-transform: uppercase;
@@ -315,7 +320,7 @@ img:hover {
 .each_pub {
   padding-bottom: 20px;
   padding-top: 20px;
-  border-top: 1px solid rgba(20,20,20,0.1);
+  /*border-top: 1px solid rgba(20,20,20,0.1);*/
 }
 .each_exp {
   padding-bottom: 20px;
