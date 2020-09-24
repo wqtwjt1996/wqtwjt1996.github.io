@@ -389,76 +389,87 @@ img:hover {
   opacity: 1;
 }
 
-.button-pdf, .button-suppl {
+.button-pdf:hover, .button-suppl:hover {
   background-color: #66A4CC;
   color: white;
-  border: 2px solid #66A4CC;
+  text-decoration: none;
 }
 
-.button-pdf:hover, .button-suppl:hover {
+.button-pdf, .button-suppl {
   background-color: white;
+  text-decoration: none;
   color: black;
+  border: 2px solid #66A4CC;
+  border-radius: 20px;
+}
+
+.button-arxiv:hover {
+  background-color: #8582CC;
+  color: white;
   text-decoration: none;
 }
 
 .button-arxiv {
-  background-color: #8582CC;
-  color: white;
+  background-color: white;
+  text-decoration: none;
+  color: black;
   border: 2px solid #8582CC;
+  border-radius: 20px;
 }
 
-.button-arxiv:hover {
-  background-color: white;
-  color: black;
+.button-website:hover {
+  background-color: #CC6666;
+  color: white;
   text-decoration: none;
 }
 
 .button-website {
-  background-color: #CC6666;
-  color: white;
+  background-color: white;
+  text-decoration: none;
+  color: black;
   border: 2px solid #CC6666;
+  border-radius: 20px;
 }
 
-.button-website:hover {
-  background-color: white;
-  color: black;
+.button-bibtex:hover {
+  background-color: #A6A6A6;
+  color: white;
   text-decoration: none;
 }
 
 .button-bibtex {
-  background-color: #A6A6A6;
-  color: white;
+  background-color: white;
+  text-decoration: none;
+  color: black;
   border: 2px solid #A6A6A6;
+  border-radius: 20px;
 }
 
-.button-bibtex:hover {
-  background-color: white;
-  color: black;
+.button-code:hover, .button-data:hover {
+  background-color: #5EBC79;
+  color: white;
   text-decoration: none;
 }
 
 .button-code, .button-data {
-  background-color: #5EBC79;
-  color: white;
+  background-color: white;
+  text-decoration: none;
+  color: black;
   border: 2px solid #5EBC79;
+  border-radius: 20px;
 }
 
-.button-code:hover, .button-data:hover {
-  background-color: white;
-  color: black;
+.button-video:hover, .button-talk:hover, .button-slides:hover, .button-poster:hover, .button-summary:hover {
+  background-color: #CCAB66;
+  color: white;
   text-decoration: none;
 }
 
 .button-video, .button-talk, .button-slides, .button-poster, .button-summary {
-  background-color: #CCAB66;
-  color: white;
-  border: 2px solid #CCAB66;
-}
-
-.button-video:hover, .button-talk:hover, .button-slides:hover, .button-poster:hover, .button-summary:hover {
   background-color: white;
   color: black;
-  text-decoration: none;
+  border: 2px solid #CCAB66;
+  border-radius: 20px;
 }
 
 .button-empty {
