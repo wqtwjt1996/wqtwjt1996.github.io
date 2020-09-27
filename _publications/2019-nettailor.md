@@ -10,6 +10,6 @@ links:
     pdf:        assets/publications/2019-nettailor/paper.pdf
     arxiv:      https://arxiv.org/abs/1907.00274
     code:       https://github.com/pedro-morgado/nettailor
-    bibtex:     assets/publications/2019-nettailor/ref.txt
     poster:     assets/publications/2019-nettailor/poster.pdf
+    bibtex:     assets/publications/2019-nettailor/ref.txt
 ---

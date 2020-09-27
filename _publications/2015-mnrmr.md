@@ -13,6 +13,6 @@ other_venues:
       venue:    International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, 2013.
       links:
         pdf:        assets/publications/2013-mnrmr-isbi/paper.pdf
-        bibtex:     assets/publications/2013-mnrmr-isbi/ref.txt
         poster:     assets/publications/2013-mnrmr-isbi/poster.pdf
+        bibtex:     assets/publications/2013-mnrmr-isbi/ref.txt
 ---

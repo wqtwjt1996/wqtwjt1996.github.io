@@ -11,6 +11,6 @@ links:
     suppl:      assets/publications/2020-deep-rtc/supp.pdf
     arxiv:      https://arxiv.org/abs/2007.09898
     code:       https://github.com/gina9726/Deep-RTC
-    bibtex:     assets/publications/2020-deep-rtc/ref.txt
     video:      https://www.youtube.com/watch?v=s9yxA_VAxx0
+    bibtex:     assets/publications/2020-deep-rtc/ref.txt
 ---

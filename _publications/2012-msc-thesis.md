@@ -7,6 +7,6 @@ year:           "2013"
 thumbnail:      assets/publications/2012-msc-thesis/thumbnail.png
 links:
     pdf:        assets/publications/2012-msc-thesis/Thesis_PedroMorgado.pdf
-    bibtex:     assets/publications/2012-msc-thesis/ref.bib
     summary:    assets/publications/2012-msc-thesis/Thesis_Summary.pdf
+    bibtex:     assets/publications/2012-msc-thesis/ref.bib
 ---
