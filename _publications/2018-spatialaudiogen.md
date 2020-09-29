@@ -2,7 +2,7 @@
 id:             2018-spatialaudiogen
 title:          Self-Supervised Generation of Spatial Audio for 360° Video
 authors:        <b>Pedro Morgado</b>, Nuno Vasconcelos, Timothy Langlois and Oliver Wang
-venue:          Advances in Neural Information Processing Systems (NIPS), Montreal, Canada, 2018.
+venue:          Advances in Neural Information Processing Systems (NeurIPS), Montreal, Canada, 2018.
 year:           "2018-12"
 thumbnail:      assets/publications/2018-spatialaudiogen/thumbnail.png
 links:
