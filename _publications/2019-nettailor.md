@@ -12,4 +12,10 @@ links:
     code:       https://github.com/pedro-morgado/nettailor
     poster:     assets/publications/2019-nettailor/poster.pdf
     bibtex:     assets/publications/2019-nettailor/ref.txt
+other_venues:
+    - title:    "[Workshop] NetTailor: Tuning the Architecture, Not Just the Weights"
+      venue:    Southern California Machine Learning Symposium (SCMLS), 2020.
+      links:
+        pdf:    assets/publications/2019-nettailor/scmls20_paper.pdf
+        bibtex:     assets/publications/2019-nettailor/scmls20_ref.txt
 ---
