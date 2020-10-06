@@ -1,0 +1,6 @@
+@article{morgado2020avid,
+  title={Audio-Visual Instance Discrimination with Cross-Modal Agreement},
+  author={Pedro Morgado, Nuno Vasconcelos, Ishan Misra},
+  year={2020},
+  journal={https://arxiv.org/abs/2004.12943},
+}
