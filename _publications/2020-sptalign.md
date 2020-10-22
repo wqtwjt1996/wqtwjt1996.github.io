@@ -6,4 +6,9 @@ venue:          To appear at Neural Information Processing Systems (NeurIPS), 20
 year:           "2020-10"
 thumbnail:      assets/publications/2020-sptalign/thumbnail.jpg
 links:
+    pdf:        assets/publications/2020-sptalign/paper.pdf
+    suppl:      assets/publications/2020-sptalign/suppl.pdf
+    code:       https://github.com/chihhuiho/PIE_pose_invariant_embedding
+    bibtex:     assets/publications/2020-sptalign/ref.txt
+    video:      https://youtu.be/E77nkQs1RMc
 ---

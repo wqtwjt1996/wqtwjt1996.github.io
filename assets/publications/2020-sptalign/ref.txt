@@ -1,0 +1,6 @@
+@inproceedings{morgadoNIPS18,
+  title={Learning Representations from Audio-Visual Spatial Alignment},
+  author={Pedro Morgado, Yi Li, Nuno Vasconcelos},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2020}
+}
