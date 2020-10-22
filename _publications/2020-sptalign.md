@@ -8,7 +8,7 @@ thumbnail:      assets/publications/2020-sptalign/thumbnail.jpg
 links:
     pdf:        assets/publications/2020-sptalign/paper.pdf
     suppl:      assets/publications/2020-sptalign/suppl.pdf
-    code:       https://github.com/chihhuiho/PIE_pose_invariant_embedding
-    bibtex:     assets/publications/2020-sptalign/ref.txt
+    code:       https://github.com/pedro-morgado/AVSpatialAlignment
     video:      https://youtu.be/E77nkQs1RMc
+    bibtex:     assets/publications/2020-sptalign/ref.txt
 ---
