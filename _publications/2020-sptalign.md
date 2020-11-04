@@ -8,6 +8,7 @@ thumbnail:      assets/publications/2020-sptalign/thumbnail.jpg
 links:
     pdf:        assets/publications/2020-sptalign/paper.pdf
     suppl:      assets/publications/2020-sptalign/suppl.pdf
+    arxiv:      https://arxiv.org/abs/2011.01819
     code:       https://github.com/pedro-morgado/AVSpatialAlignment
     video:      https://youtu.be/E77nkQs1RMc
     bibtex:     assets/publications/2020-sptalign/ref.txt
