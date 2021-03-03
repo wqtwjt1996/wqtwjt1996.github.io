@@ -325,7 +325,7 @@ img:hover {
 .each_exp {
   padding-bottom: 20px;
 }
-.pub_title, .pub_author, .pub_venue, .pub_supplemental {
+.pub_title, .pub_author, .pub_venue, .pub_supplemental, .pub_highlight {
   font-family: 'Roboto';
   margin-bottom: 1px;
 }
@@ -341,6 +341,12 @@ img:hover {
   font-weight: 300;
   font-size:11pt;
   line-height: 1.2;
+}
+.pub_highlight {
+  font-weight: 400;
+  font-size:11pt;
+  line-height: 1.2;
+  color: #881b2b;
 }
 .pub_venue {
   font-size:10pt;

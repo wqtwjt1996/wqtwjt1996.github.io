@@ -11,6 +11,7 @@ links:
 other_venues:
     - title:    "Efficient Selection of Non-redundant Features for the Diagnosis of Alzheimer's Disease"
       venue:    International Symposium on Biomedical Imaging (ISBI), San Francisco, CA, 2013.
+      highlight:      Oral presentation
       links:
         pdf:        assets/publications/2013-mnrmr-isbi/paper.pdf
         poster:     assets/publications/2013-mnrmr-isbi/poster.pdf

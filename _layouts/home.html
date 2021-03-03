@@ -140,6 +140,9 @@
           <p class="pub_title">{{ pub.title }}</p>
           <p class="pub_author">{{ pub.authors }}</p>
           <p class="pub_venue">{{ pub.venue }}</p>
+          {% if pub.highlight %}
+          <p class="pub_highlight">{{ pub.highlight }}</p>
+          {% endif %}
           <p class="pub_supplemental">
             {% assign hasbib = False %}
             {% for link in pub.links %}
@@ -176,6 +179,9 @@
           <p class="pub_title mt-3">{{ pub2.title }}</p>
           <p class="pub_author">{{ pub.authors}}</p>
           <p class="pub_venue">{{ pub2.venue }}</p>
+          {% if pub2.highlight %}
+          <p class="pub_highlight">{{ pub2.highlight }}</p>
+          {% endif %}
           <p class="pub_supplemental">
             {% assign hasbib2 = False %}
             {% for link in pub2.links %}
