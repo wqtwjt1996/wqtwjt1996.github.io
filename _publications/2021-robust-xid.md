@@ -9,5 +9,6 @@ thumbnail:      assets/publications/2021-robust-xid/thumbnail.png
 links:
     pdf:    	assets/publications/2021-robust-xid/cvpr21-robust-xid.pdf
     arxiv:      https://arxiv.org/abs/2103.15916
+    video:      https://youtu.be/OjADJbvMCwI
     bibtex:     assets/publications/2021-robust-xid/ref.txt
 ---
