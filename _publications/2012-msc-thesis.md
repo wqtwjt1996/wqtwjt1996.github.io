@@ -6,7 +6,7 @@ venue:          Master Thesis, Instituto Superior Tecnico, Lisboa, Portugal.
 year:           "2013"
 thumbnail:      assets/publications/2012-msc-thesis/thumbnail.png
 links:
-    thesis:        assets/publications/2012-msc-thesis/Thesis_PedroMorgado.pdf
+    thesis:     assets/publications/2012-msc-thesis/Thesis_PedroMorgado.pdf
     summary:    assets/publications/2012-msc-thesis/Thesis_Summary.pdf
-    bibtex:     assets/publications/2012-msc-thesis/ref.bib
+    bibtex:     assets/publications/2012-msc-thesis/ref.txt
 ---
