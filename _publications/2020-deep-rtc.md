@@ -6,11 +6,11 @@ venue:          European Conference on Computer Vision (ECCV), <strike>Glasgow, 
 year:           "2020-06"
 thumbnail:      assets/publications/2020-deep-rtc/thumbnail.jpg
 links:
-    website:    http://www.svcl.ucsd.edu/projects/deep-rtc/
     pdf:        assets/publications/2020-deep-rtc/paper.pdf
+    paper:      https://arxiv.org/abs/2007.09898
     suppl:      assets/publications/2020-deep-rtc/supp.pdf
-    arxiv:      https://arxiv.org/abs/2007.09898
     code:       https://github.com/gina9726/Deep-RTC
+    website:    http://www.svcl.ucsd.edu/projects/deep-rtc/
     video:      https://www.youtube.com/watch?v=s9yxA_VAxx0
     bibtex:     assets/publications/2020-deep-rtc/ref.txt
 ---

@@ -8,6 +8,6 @@ thumbnail:      assets/publications/2020-hashing/thumbnail.jpg
 links:
     pdf:        assets/publications/2020-hashing/hashing.pdf
     pdf:        http://link.springer.com/article/10.1007/s11263-020-01362-7
-    arxiv:      http://arxiv.org/abs/2007.13912
+    paper:      http://arxiv.org/abs/2007.13912
     bibtex:     assets/publications/2020-hashing/ref.txt
 ---

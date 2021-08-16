@@ -6,6 +6,6 @@ venue:          Computers in Biology and Medicine, Vol. 58, pp. 101-109, March, 
 year:           "2015"
 thumbnail:      assets/publications/2015-ad-conversion/thumbnail.png
 links:
-    pdf:        assets/publications/2015-ad-conversion/paper.pdf
+    paper:        assets/publications/2015-ad-conversion/paper.pdf
     bibtex:     assets/publications/2015-ad-conversion/ref.txt
 ---

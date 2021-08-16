@@ -123,8 +123,6 @@
   <section class="container mb-5">
     <div class="row mx-auto">
       <h1 class="col-12 px-0">Publications</h1>
-      <p class="lead pb-3">Find my publication profile at <a href="{{ site.data.info.links.Scholar }}" target="_blank">Google Scholar</a>.</p>
-
       {% assign sorted = site.publications | sort: 'year' | reverse %}
       {% for pub in sorted %}
       <div class="row each_pub">
@@ -146,6 +144,7 @@
                 <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ pub.id }}" role="button" aria-expanded="false" aria-controls="collapse{{ pub.id }}">
                   {{ link[0] }}
                 </a>
+              {% elsif link[0] == "pdf" %}
               {% else %} <!-- Other links -->
                 <a class="button button-{{link[0]}}" href="{{ link[1] }}" target="_blank">
                   {{ link[0] }}

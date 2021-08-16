@@ -6,16 +6,15 @@ venue:          IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)
 year:           "2019-07"
 thumbnail:      assets/publications/2019-nettailor/thumbnail.png
 links:
-    website:    https://pedro-morgado.github.io/nettailor/
     pdf:        assets/publications/2019-nettailor/paper.pdf
-    arxiv:      https://arxiv.org/abs/1907.00274
+    paper:      https://arxiv.org/abs/1907.00274
     code:       https://github.com/pedro-morgado/nettailor
-    poster:     assets/publications/2019-nettailor/poster.pdf
+    website:    https://pedro-morgado.github.io/nettailor/
     bibtex:     assets/publications/2019-nettailor/ref.txt
 other_venues:
     - title:    "[Workshop] NetTailor: Tuning the Architecture, Not Just the Weights"
       venue:    Southern California Machine Learning Symposium (SCMLS), 2020.
       links:
-        pdf:    assets/publications/2019-nettailor/scmls20_paper.pdf
+        paper:    assets/publications/2019-nettailor/scmls20_paper.pdf
         bibtex:     assets/publications/2019-nettailor/scmls20_ref.txt
 ---

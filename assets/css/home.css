@@ -400,19 +400,19 @@ img:hover {
   text-decoration: none;
 }
 
-.button-pdf:hover, .button-suppl:hover, .button-arxiv:hover {
+.button-pdf:hover, .button-suppl:hover, .button-arxiv:hover, .button-paper:hover, .button-thesis:hover {
   background-color: #5d8bbf;
 }
 
-.button-pdf, .button-suppl, .button-arxiv {
+.button-pdf, .button-suppl, .button-arxiv, .button-paper, .button-thesis {
   border: 2px solid #5d8bbf;
 }
 
-.button-website:hover {
+.button-website:hover, .button-blogpost:hover, .button-talk:hover, .button-video:hover {
   background-color: #b14f4e;
 }
 
-.button-website {
+.button-website, .button-blogpost, .button-video, .button-talk {
   border: 2px solid #b14f4e;
 }
 
@@ -424,11 +424,11 @@ img:hover {
   border: 2px solid #A6A6A6;
 }
 
-.button-code:hover, .button-data:hover, .button-video:hover, .button-talk:hover, .button-slides:hover, .button-poster:hover, .button-summary:hover {
+.button-code:hover, .button-data:hover, .button-slides:hover, .button-poster:hover, .button-summary:hover {
   background-color: #5ba86d;
 }
 
-.button-code, .button-data, .button-video, .button-talk, .button-slides, .button-poster, .button-summary {
+.button-code, .button-data, .button-slides, .button-poster, .button-summary {
   border: 2px solid #5ba86d;
 }
 

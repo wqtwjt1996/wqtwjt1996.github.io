@@ -6,12 +6,11 @@ venue:          Neural Information Processing Systems (NeurIPS), Montreal, Canad
 year:           "2018-12"
 thumbnail:      assets/publications/2018-spatialaudiogen/thumbnail.png
 links:
-    website:    https://pedro-morgado.github.io/spatialaudiogen/
     pdf:        assets/publications/2018-spatialaudiogen/paper.pdf
-    arxiv:      https://arxiv.org/abs/1809.02587
+    paper:      https://arxiv.org/abs/1809.02587
     code:       https://github.com/pedro-morgado/spatialaudiogen
     data:       https://github.com/pedro-morgado/spatialaudiogen
+    website:    https://pedro-morgado.github.io/spatialaudiogen/
     video:      https://www.youtube.com/watch?v=SXFUr2GkxS8
-    poster:     assets/publications/2018-spatialaudiogen/poster.pdf
     bibtex:     assets/publications/2018-spatialaudiogen/ref.txt
 ---
