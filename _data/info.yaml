@@ -4,8 +4,8 @@ institution:
   - Robotics Institute
   - Carnegie Mellon University
 links:
-  Scholar: "https://scholar.google.com/citations?user=_ntLSQ4AAAAJ&view_op=list_works&sortby=pubdate"
-  Github: "https://github.com/pedro-morgado"
-  CV: "assets/files/cv.pdf"
-  Email: "mailto:pmaravil@eng.ucsd.edu"
+  Email:    "mailto:pmaravil@eng.ucsd.edu"
+  CV:       "assets/files/cv.pdf"
+  Scholar:  "https://scholar.google.com/citations?user=_ntLSQ4AAAAJ&view_op=list_works&sortby=pubdate"
+  Github:   "https://github.com/pedro-morgado"
 
