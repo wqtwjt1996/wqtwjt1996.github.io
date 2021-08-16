@@ -323,7 +323,8 @@ img:hover {
   /*border-top: 1px solid rgba(20,20,20,0.1);*/
 }
 .each_exp {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
+  margin-left: 10px;
 }
 .pub_title, .pub_author, .pub_venue, .pub_supplemental, .pub_highlight {
   font-family: 'Roboto';
