@@ -7,6 +7,5 @@ year:           "2021b"
 thumbnail:      assets/publications/2021-phdthesis/thesis.png
 links:
     thesis:     https://escholarship.org/uc/item/13s568v6
-    website:    http://www.svcl.ucsd.edu/projects/av-ssl/
     bibtex:     assets/publications/2021-phdthesis/ref.txt
 ---
