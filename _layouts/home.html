@@ -67,13 +67,13 @@
   <!-- About -->
   <section class="container mt-4 mb-5" id="about">
     <div class="row mx-auto">
-      <div class="col-lg-4 col-sm-12 my-auto py-2 px-0">
+      <div class="col-lg-3 col-sm-12 my-auto py-2 px-0">
         <div class="row">
           <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile.jpg" alt="">
         </div>
       </div>
 
-      <div class="col-lg-6 col-sm-12 mx-auto my-auto py-2 px-0">
+      <div class="col-lg-6 col-sm-12 mx-auto mt-auto py-2 px-0">
         <div class="row">
           <div class="col-12">
             <p class="header-1 mb-1">{{ site.data.info.name }}</p>
@@ -128,16 +128,13 @@
       {% assign sorted = site.publications | sort: 'year' | reverse %}
       {% for pub in sorted %}
       <div class="row each_pub">
-        <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3" style="min-height: 100px;">
+        <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3" style="min-height: 100px">
           <img class="img-fluid px-3 py-2 pub-thumbnail" src="{{ pub.thumbnail }}">
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12">
           <p class="pub_title">{{ pub.title }}</p>
           <p class="pub_author">{{ pub.authors }}</p>
           <p class="pub_venue">{{ pub.venue }}</p>
-          {% if pub.highlight %}
-          <p class="pub_highlight">{{ pub.highlight }}</p>
-          {% endif %}
           <p class="pub_supplemental">
             {% assign hasbib = False %}
             {% for link in pub.links %}
@@ -153,6 +150,9 @@
                 </a>
               {% endif %}
             {% endfor %}
+            {% if pub.highlight %}
+            <span class="pub_highlight"> ({{ pub.highlight }})</span>
+            {% endif %}
             <!-- Add bitext content -->
             {% if hasbib == True %}
             <div class="collapse" id="collapse{{ pub.id }}">
@@ -168,16 +168,12 @@
             {% endif %}
           </p>
 
-
           <!--Alternative venues-->
           {% if pub.other_venues %}
           {% for pub2 in pub.other_venues %}
           <p class="pub_title mt-3">{{ pub2.title }}</p>
           <p class="pub_author">{{ pub.authors}}</p>
           <p class="pub_venue">{{ pub2.venue }}</p>
-          {% if pub2.highlight %}
-          <p class="pub_highlight">{{ pub2.highlight }}</p>
-          {% endif %}
           <p class="pub_supplemental">
             {% assign hasbib2 = False %}
             {% for link in pub2.links %}
@@ -192,6 +188,9 @@
                 </a>
               {% endif %}
             {% endfor %}
+            {% if pub2.highlight %}
+            <span class="pub_highlight"> ({{ pub2.highlight }})</span>
+            {% endif %}
             <!-- Add bitext content -->
             {% if hasbib2 == True %}
             <div class="collapse" id="collapse{{ pub.id }}2">
@@ -236,7 +235,7 @@
         {% endfor %}
 
         <!-- Work -->
-        <h2 class="mb-3 mt-5 px-0">Professional Experience</h2>
+        <h2 class="mb-3 mt-5 px-0">Research Experience</h2>
         {% for work in site.data.work %}
         <div class="row each_exp">
           <div class="col-lg-9 col-sm-12">
