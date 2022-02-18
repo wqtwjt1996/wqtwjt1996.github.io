@@ -151,7 +151,7 @@
               {% endif %}
             {% endfor %}
             {% if pub.highlight %}
-            <span class="pub_highlight"> ({{ pub.highlight }})</span>
+            <a class="pub_highlight"> ({{ pub.highlight }})</a>
             {% endif %}
             <!-- Add bitext content -->
             {% if hasbib == True %}
@@ -189,7 +189,7 @@
               {% endif %}
             {% endfor %}
             {% if pub2.highlight %}
-            <span class="pub_highlight"> ({{ pub2.highlight }})</span>
+            <a class="pub_highlight"> ({{ pub2.highlight }})</a>
             {% endif %}
             <!-- Add bitext content -->
             {% if hasbib2 == True %}
