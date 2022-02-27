@@ -1,7 +1,12 @@
 ---
 id:             2020-deep-rtc
 title:          "Solving Long-tailed Recognition with Deep Realistic Taxonomic Classifier"
-authors:        Tz-Ying Wu, <b>Pedro Morgado</b>, Pei Wang, Chih-Hui Ho, and Nuno Vasconcelos
+authors:        
+    - Gina 
+    - Me
+    - Pei
+    - John
+    - Nuno
 venue:          European Conference on Computer Vision (ECCV), <strike>Glasgow, UK</strike>, Virtual, 2020.
 year:           "2020-06"
 thumbnail:      assets/publications/2020-deep-rtc/thumbnail.jpg

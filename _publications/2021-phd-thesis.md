@@ -1,7 +1,8 @@
 ---
 id:             2021-thesis
 title:          "Learning to see and hear without human supervision"
-authors:        <b>Pedro Morgado</b>
+authors:        
+    - Me
 venue:          PhD Thesis, University of California San Diego.
 year:           "2021b"
 thumbnail:      assets/publications/2021-phdthesis/thesis.png

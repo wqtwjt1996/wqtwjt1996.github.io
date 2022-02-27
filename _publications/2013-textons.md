@@ -1,7 +1,10 @@
 ---
 id:             2013-textons
 title:          "Texton-based Diagnosis of Alzheimer's Disease"
-authors:        <b>Pedro Morgado</b>, Margarida Silveira and Durval C Costa
+authors:        
+    - Me
+    - Margarida
+    - DurvalCosta
 venue:          IEEE Int. Workshop on Machine Learning for Signal Processing (MLSP), Southampton, UK, 2013.
 year:           "2013"
 thumbnail:      assets/publications/2013-textons/thumbnail.png

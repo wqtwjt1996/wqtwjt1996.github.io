@@ -133,7 +133,20 @@
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12">
           <p class="pub_title">{{ pub.title }}</p>
-          <p class="pub_author">{{ pub.authors }}</p>
+          <p class="pub_author">
+            {% for author in pub.authors %}
+              {% assign author_info = site.data.people[author] %}
+              {% if author_info %}
+                {% if author_info.website %}
+                  <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}{% if forloop.last == false %},&nbsp{% endif %}</a>
+                {% else %}
+                  {% if author == "Me" %}<b>{% endif %}{{ author_info.name }}{% if author == "Me" %}</b>{% endif %}{% if forloop.last == false %},&nbsp{% endif %}
+                {% endif %}
+              {% else %}
+                {{ author }}{% if forloop.last == false %},&nbsp{% endif %}
+              {% endif %}
+            {% endfor %}
+          </p>
           <p class="pub_venue">{{ pub.venue }}</p>
           <p class="pub_supplemental">
             {% assign hasbib = False %}
@@ -151,7 +164,7 @@
               {% endif %}
             {% endfor %}
             {% if pub.highlight %}
-            <a class="pub_highlight"> ({{ pub.highlight }})</a>
+            <a class="pub_highlight">{{ pub.highlight }}</a>
             {% endif %}
             <!-- Add bitext content -->
             {% if hasbib == True %}
@@ -172,7 +185,20 @@
           {% if pub.other_venues %}
           {% for pub2 in pub.other_venues %}
           <p class="pub_title mt-3">{{ pub2.title }}</p>
-          <p class="pub_author">{{ pub.authors}}</p>
+          <p class="pub_author">
+            {% for author in pub.authors %}
+            {% assign author_info = site.data.people[author] %}
+            {% if author_info %}
+            {% if author_info.website %}
+            <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}{% if forloop.last == false %},&nbsp{% endif %}</a>
+            {% else %}
+            {% if author == "Me" %}<b>{% endif %}{{ author_info.name }}{% if author == "Me" %}</b>{% endif %}{% if forloop.last == false %},&nbsp{% endif %}
+            {% endif %}
+            {% else %}
+            {{ author }}{% if forloop.last == false %},&nbsp{% endif %}
+            {% endif %}
+            {% endfor %}
+          </p>
           <p class="pub_venue">{{ pub2.venue }}</p>
           <p class="pub_supplemental">
             {% assign hasbib2 = False %}
@@ -189,7 +215,7 @@
               {% endif %}
             {% endfor %}
             {% if pub2.highlight %}
-            <a class="pub_highlight"> ({{ pub2.highlight }})</a>
+            <a class="pub_highlight">{{ pub2.highlight }}</a>
             {% endif %}
             <!-- Add bitext content -->
             {% if hasbib2 == True %}

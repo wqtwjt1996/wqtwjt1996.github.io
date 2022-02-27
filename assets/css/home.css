@@ -350,7 +350,8 @@ img:hover {
   font-weight: 400;
   font-size:11pt;
   line-height: 1.2;
-  color: #2f2f2f;
+  color: #AA0000!important;
+  margin-left: 8pt;
   /*text-decoration: underline;*/
 }
 .pub_supplemental {
