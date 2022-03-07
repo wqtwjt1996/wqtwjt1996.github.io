@@ -186,7 +186,7 @@
           {% for pub2 in pub.other_venues %}
           <p class="pub_title mt-3">{{ pub2.title }}</p>
           <p class="pub_author">
-            {% for author in pub.authors %}
+            {% for author in pub2.authors %}
             {% assign author_info = site.data.people[author] %}
             {% if author_info %}
             {% if author_info.website %}

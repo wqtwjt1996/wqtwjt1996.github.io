@@ -16,7 +16,12 @@ links:
     video:      https://youtu.be/E77nkQs1RMc
     bibtex:     assets/publications/2020-sptalign/ref.txt
 other_venues:
-    - venue:    CVPR Workshop - Sight and Sound, 2021.
+    - title:    "[Workshop] Learning Representations from Audio-Visual Spatial Alignment"
+      authors:    
+      - YiLi
+      - Me
+      - Nuno
+      venue:    CVPR Workshop - Sight and Sound, 2021.
       links:
         paper:  https://sightsound.org/papers/2021/Yi_Li_Learning_Representations_from_Audio-Visual_Spatial_Alignment.pdf
         talk:   https://youtu.be/IEFuj7WGO-c?t=3865
