@@ -95,24 +95,10 @@
     <div class="row">
       <div class="col-12 mx-auto pt-5">
         <p class="lead">
-          I am currently a postdoc researcher in the Robotics Institute at Carnegie Mellon, working with
-          <a href="http://www.cs.cmu.edu/~abhinavg/" target="_blank">Abhinav Gupta</a>.
-          In the Fall of 2022, I will be joining the ECE department at the University of Wisconsin Madison 
-          as an assistant professor.
-          Previously, I completed my PhD at the University of California San Diego advised by
-          <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos</a>.
-          Before UC San Diego, I completed both BSc and MSc degrees from Instituto Superior Técnico,
-          Universidade de Lisboa, Portugal, where I worked with
-          <a href="http://users.isr.ist.utl.pt/~msilveira/" target="_blank">Margarida Silveira</a> and 
-          <a href="http://users.isr.ist.utl.pt/~jsm/" target="_blank">Jorge S Marques</a>.
+          I am currently a postdoc researcher in the Robotics Institute at Carnegie Mellon, working with <a href="http://www.cs.cmu.edu/~abhinavg/" target="_blank">Abhinav Gupta</a>. In the Fall of 2022, I will be joining the ECE department at the University of Wisconsin Madison as an assistant professor. Previously, I completed my PhD at the University of California San Diego advised by <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos</a>. Before UC San Diego, I completed both BSc and MSc degrees from Instituto Superior Técnico, Universidade de Lisboa, Portugal, where I worked with <a href="http://users.isr.ist.utl.pt/~msilveira/" target="_blank">Margarida Silveira</a> and <a href="http://users.isr.ist.utl.pt/~jsm/" target="_blank">Jorge S Marques</a>.
         </p>
         <p class="lead mb-2">
-          I am interested in computer vision and machine learning.
-          Specifically, my research focuses on developing <b>learning and deployment frameworks</b> that enable
-          deep learning to operate with <b>restricted labeled data</b> and <b>restricted computing power</b>.
-          As such, I maintain an active interest in areas such as zero-shot, few-shot and other transfer
-          learning problems, self-supervised learning, multimodal supervision, and efficient training and deployment
-          procedures.
+          I am interested in computer vision and machine learning. Specifically, my research focuses on developing <b>learning and deployment frameworks</b> that enable deep learning to operate with <b>restricted labeled data</b> and <b>restricted computing power</b>. As such, I maintain an active interest in areas such as zero-shot, few-shot and other transfer learning problems, self-supervised learning, multimodal supervision, and efficient training and deployment procedures.
         </p>
       </div>
     </div>
@@ -128,23 +114,37 @@
       {% assign sorted = site.publications | sort: 'year' | reverse %}
       {% for pub in sorted %}
       <div class="row each_pub">
-        <div class="d-none d-md-block col-md-3 d-lg-block col-lg-3" style="min-height: 100px">
-          <img class="img-fluid px-3 py-2 pub-thumbnail" src="{{ pub.thumbnail }}">
+        <div class="d-none d-md-block col-md-4 d-lg-block col-lg-4 pub-thumbnail" style="min-height: 100px">
+          {% if pub.thumb_width %}
+          <img class="img-fluid px-3 py-2 center-thumb" width="{{ pub.thumb_width }}%" style="margin:0 auto;" src="{{ pub.thumbnail }}">
+          {% else %}
+          <img class="img-fluid px-3 py-2 center-thumb" src="{{ pub.thumbnail }}">
+          {% endif %}
         </div>
-        <div class="col-lg-9 col-md-9 col-sm-12">
+        <div class="col-lg-8 col-md-8 col-sm-12 pl-4">
+          <div class="center-thumb">
           <p class="pub_title">{{ pub.title }}</p>
           <p class="pub_author">
             {% for author in pub.authors %}
-              {% assign author_info = site.data.people[author] %}
+              {% if author.first %}
+                {% assign author2 = author[0] %}
+                {% assign extra = author[1] %}
+              {% else %}
+                {% assign author2 = author %}
+                {% assign extra = "" %}
+              {% endif %}
+
+              {% assign author_info = site.data.people[author2] %}
               {% if author_info %}
                 {% if author_info.website %}
-                  <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}{% if forloop.last == false %},&nbsp{% endif %}</a>
+                  <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}</a>
                 {% else %}
-                  {% if author == "Me" %}<b>{% endif %}{{ author_info.name }}{% if author == "Me" %}</b>{% endif %}{% if forloop.last == false %},&nbsp{% endif %}
+                  {% if author2 == "Me" %}<b>{% endif %}{{ author_info.name }}{% if author2 == "Me" %}</b>{% endif %}
                 {% endif %}
               {% else %}
-                {{ author }}{% if forloop.last == false %},&nbsp{% endif %}
+                {{ author2 }}
               {% endif %}
+              {{ extra }}{% if forloop.last == false %},&nbsp{% endif %}
             {% endfor %}
           </p>
           <p class="pub_venue">{{ pub.venue }}</p>
@@ -187,16 +187,25 @@
           <p class="pub_title mt-3">{{ pub2.title }}</p>
           <p class="pub_author">
             {% for author in pub2.authors %}
-            {% assign author_info = site.data.people[author] %}
+            {% if author.first %}
+            {% assign author2 = author[0] %}
+            {% assign extra = author[1] %}
+            {% else %}
+            {% assign author2 = author %}
+            {% assign extra = "" %}
+            {% endif %}
+
+            {% assign author_info = site.data.people[author2] %}
             {% if author_info %}
             {% if author_info.website %}
-            <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}{% if forloop.last == false %},&nbsp{% endif %}</a>
+            <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}</a>
             {% else %}
-            {% if author == "Me" %}<b>{% endif %}{{ author_info.name }}{% if author == "Me" %}</b>{% endif %}{% if forloop.last == false %},&nbsp{% endif %}
+            {% if author2 == "Me" %}<b>{% endif %}{{ author_info.name }}{% if author2 == "Me" %}</b>{% endif %}
             {% endif %}
             {% else %}
-            {{ author }}{% if forloop.last == false %},&nbsp{% endif %}
+            {{ author2 }}
             {% endif %}
+            {{ extra }}{% if forloop.last == false %},&nbsp{% endif %}
             {% endfor %}
           </p>
           <p class="pub_venue">{{ pub2.venue }}</p>
@@ -233,6 +242,7 @@
           </p>
           {% endfor %}
           {% endif %}
+          </div>
         </div>
       </div>
       {% endfor %}

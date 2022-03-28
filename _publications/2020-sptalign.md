@@ -2,8 +2,8 @@
 id:             2020-sptalign
 title:          "Learning Representations from Audio-Visual Spatial Alignment"
 authors:        
-    - Me
-    - YiLi
+    - [Me, "*"]
+    - [YiLi, "*"]
     - Nuno
 venue:          Neural Information Processing Systems (NeurIPS), 2020.
 year:           "2020-10"
@@ -18,8 +18,8 @@ links:
 other_venues:
     - title:    "[Workshop] Learning Representations from Audio-Visual Spatial Alignment"
       authors:    
-      - YiLi
-      - Me
+      - [YiLi, "*"]
+      - [Me, "*"]
       - Nuno
       venue:    CVPR Workshop - Sight and Sound, 2021.
       links:
