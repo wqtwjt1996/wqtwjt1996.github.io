@@ -36,44 +36,44 @@
     <link href="/assets/css/home.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="my-0 py-0">
 
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#about">Pedro Morgado</a>
+    <a class="navbar-brand js-scroll-trigger" href="#top">Pedro Morgado</a>
     <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#top">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#resume">Vitae</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="row col-lg-8 col-sm-12 mx-auto main-pane mb-5">
+<!--  Top -->
+<a id="top" class="py-5 mt-5">&nbsp;</a><br>
+<a class="py-5 mt-5">&nbsp;</a>
 
+<div class="row col-lg-8 col-sm-12 mx-auto main-pane mb-5">
   <!-- About -->
   <section class="container mt-4 mb-5" id="about">
     <div class="row mx-auto">
       <div class="col-lg-3 col-sm-12 my-auto py-2 px-0">
         <div class="row">
-          <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile.jpg" alt="">
+          <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile2.jpg" alt="">
         </div>
       </div>
 
-      <div class="col-lg-6 col-sm-12 mx-auto mt-auto py-2 px-0">
+      <div class="col-lg-6 col-sm-12 mx-auto my-auto px-0">
         <div class="row">
           <div class="col-12">
             <p class="header-1 mb-1">{{ site.data.info.name }}</p>
@@ -95,10 +95,12 @@
     <div class="row">
       <div class="col-12 mx-auto pt-5">
         <p class="lead">
-          I am currently a postdoc researcher in the Robotics Institute at Carnegie Mellon, working with <a href="http://www.cs.cmu.edu/~abhinavg/" target="_blank">Abhinav Gupta</a>. In the Fall of 2022, I will be joining the ECE department at the University of Wisconsin Madison as an assistant professor. Previously, I completed my PhD at the University of California San Diego advised by <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos</a>. Before UC San Diego, I completed both BSc and MSc degrees from Instituto Superior Técnico, Universidade de Lisboa, Portugal, where I worked with <a href="http://users.isr.ist.utl.pt/~msilveira/" target="_blank">Margarida Silveira</a> and <a href="http://users.isr.ist.utl.pt/~jsm/" target="_blank">Jorge S Marques</a>.
+          I am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Wisconsin-Madison.
+          My research interests are at the intersection of computer vision and machine learning. Specifically, I develop systems that continuously learn to perceive the world through multiple sensory modalities.
         </p>
         <p class="lead mb-2">
-          I am interested in computer vision and machine learning. Specifically, my research focuses on developing <b>learning and deployment frameworks</b> that enable deep learning to operate with <b>restricted labeled data</b> and <b>restricted computing power</b>. As such, I maintain an active interest in areas such as zero-shot, few-shot and other transfer learning problems, self-supervised learning, multimodal supervision, and efficient training and deployment procedures.
+          Previously, I was a postdoc researcher at Carnegie Mellon University, working with <a href="http://www.cs.cmu.edu/~abhinavg/" target="_blank">Abhinav Gupta</a>.
+          I completed my PhD at the University of California San Diego advised by <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos</a>, and both BSc and MSc degrees at Instituto Superior Técnico, Universidade de Lisboa, where I worked with <a href="http://users.isr.ist.utl.pt/~msilveira/" target="_blank">Margarida Silveira</a> and <a href="http://users.isr.ist.utl.pt/~jsm/" target="_blank">Jorge S Marques</a>.
         </p>
       </div>
     </div>
@@ -246,55 +248,6 @@
         </div>
       </div>
       {% endfor %}
-    </div>
-  </section>
-
-  <!-- Resume -->
-  <div class="col-12 py-0 my-0 px-0 mx-0" id="resume">
-    <hr class="my-3">
-  </div>
-  <section class="container mb-5">
-    <div class="row mx-auto">
-      <div class="col-12">
-        <h1 class="mb-5 col-12 px-0">Vitae</h1>
-
-        <!-- Education -->
-        <h2 class="mb-3 col-12 px-0">Education</h2>
-        {% for edu in site.data.education %}
-        <div class="row each_exp">
-          <div class="col-lg-9 col-sm-12">
-            <p class="exp_title"> {{ edu.institution }} </p>
-            <p class="exp_place"> {{ edu.position }} </p>
-          </div>
-          <div class="col-lg-3 col-sm-12 exp_period"> {{ edu.time }} </div>
-        </div>
-        {% endfor %}
-
-        <!-- Work -->
-        <h2 class="mb-3 mt-5 px-0">Research Experience</h2>
-        {% for work in site.data.work %}
-        <div class="row each_exp">
-          <div class="col-lg-9 col-sm-12">
-            <p class="exp_title"> {{ work.institution }} </p>
-            <p class="exp_place"> {{ work.position }} </p>
-          </div>
-          <div class="col-lg-3 col-sm-12 exp_period">{{ work.time }}</div>
-        </div>
-        {% endfor %}
-
-        <!-- Awards -->
-        <h2 class="mb-3 mt-5">Awards & Fellowships</h2>
-        {% for award in site.data.awards %}
-        <div class="row each_exp">
-          <div class="col-lg-9 col-sm-12">
-            <p class="exp_title"> {{ award.title }} </p>
-            <p class="exp_place"> {{ award.description }}</p>
-          </div>
-          <div class="col-lg-3 col-sm-12 exp_period">{{ award.time }}</div>
-        </div>
-        {% endfor %}
-
-      </div>
     </div>
   </section>
 

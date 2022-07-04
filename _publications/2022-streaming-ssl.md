@@ -5,7 +5,7 @@ authors:
     - [Senthil, "*"]
     - [Me, "*"]
     - Abhinav
-venue:          (preprint)
+venue:          European Conference on Computer Vision (ECCV), Tel Aviv, Israel, 2022.
 year:           "2022-03"
 thumbnail:      assets/publications/2022-streaming-ssl/thumbnail.gif
 links:

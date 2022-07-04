@@ -202,10 +202,11 @@ img::-moz-selection {
 }
 
 .img-profile {
-  max-width: 13rem;
-  max-height: 13rem;
+  /*max-width: 13rem;*/
+  /*max-height: 13rem;*/
   width: 100%;
   margin: auto;
+  border-radius: 50%;
 }
 .center-thumb {
   margin: 0;
