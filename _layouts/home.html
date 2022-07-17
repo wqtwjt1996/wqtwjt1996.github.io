@@ -15,12 +15,13 @@
     <meta property="og:type" content="website">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111354857-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66337211-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-111354857-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-66337211-1');
     </script>
 
     <!-- Bootstrap and JQuery-->
@@ -29,7 +30,7 @@
 
    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
     <!-- Custom styles -->
@@ -42,14 +43,17 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#top">Pedro Morgado</a>
+    <a class="navbar-brand js-scroll-trigger" href="#about">Pedro Morgado</a>
     <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#top">About</a>
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#news">News</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
@@ -59,17 +63,15 @@
   </div>
 </nav>
 
-<!--  Top -->
-<a id="top" class="py-5 mt-5">&nbsp;</a><br>
-<a class="py-5 mt-5">&nbsp;</a>
-
-<div class="row col-lg-8 col-sm-12 mx-auto main-pane mb-5">
+<div class="row col-lg-8 col-sm-12 mx-auto main-pane mb-2">
   <!-- About -->
-  <section class="container mt-4 mb-5" id="about">
-    <div class="row mx-auto">
+  <section class="container">
+    <a class="anchor" id="about"></a>
+    <div class="col-12 py-5"></div>
+    <div class="row mx-auto mb-3">
       <div class="col-lg-3 col-sm-12 my-auto py-2 px-0">
         <div class="row">
-          <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile2.jpg" alt="">
+          <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile.jpg" alt="">
         </div>
       </div>
 
@@ -102,15 +104,50 @@
           Previously, I was a postdoc researcher at Carnegie Mellon University, working with <a href="http://www.cs.cmu.edu/~abhinavg/" target="_blank">Abhinav Gupta</a>.
           I completed my PhD at the University of California San Diego advised by <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos</a>, and both BSc and MSc degrees at Instituto Superior Técnico, Universidade de Lisboa, where I worked with <a href="http://users.isr.ist.utl.pt/~msilveira/" target="_blank">Margarida Silveira</a> and <a href="http://users.isr.ist.utl.pt/~jsm/" target="_blank">Jorge S Marques</a>.
         </p>
+        <p class="lead mb-2"><strong>
+          I am looking for highly motivated PhD and MS students to join the lab. If you are interested, please contact me.
+        </strong></p>
       </div>
     </div>
   </section>
 
+  <!-- News -->
+  <section class="container lead" >
+<!--    <div class="col-12 py-4"><hr></div>-->
+    <a class="anchor" id="news"></a>
+    <h1 class="col-12 px-0">News</h1>
+    <ul class="my-0">
+    {% for news in site.data.news.recent %}
+      <li>{{ news }}</li>
+    {% endfor %}
+    </ul>
+    <span id="moreNews" style="display:none">
+    <ul class="my-0">
+    {% for news in site.data.news.more %}
+    <li>{{ news }}</li>
+    {% endfor %}
+    </ul>
+    </span>
+    <a href="javascript:;" onclick="showMoreNews()" id="moreNewsBtn" class="my-2 px-4">--- show more ---</a>
+  </section>
+  <script>
+      function showMoreNews() {
+          var moreNewsTxt = document.getElementById("moreNews");
+          var moreNewsBtn = document.getElementById("moreNewsBtn");
+          if (moreNewsTxt.style.display === "none") {
+              moreNewsBtn.innerHTML = "--- show less ---";
+              moreNewsTxt.style.display = "inline";
+          } else {
+              moreNewsBtn.innerHTML = "--- show more ---";
+              moreNewsTxt.style.display = "none";
+          }
+      }
+  </script>
+
   <!-- Publications -->
-  <div class="col-12 py-0 my-0 px-0 mx-0" id="publications">
-    <hr class="my-3">
-  </div>
-  <section class="container mb-5">
+  <section class="container">
+<!--    <div class="col-12 py-4"><hr></div>-->
+    <a class="anchor" id="publications"></a>
     <div class="row mx-auto">
       <h1 class="col-12 px-0">Publications</h1>
       {% assign sorted = site.publications | sort: 'year' | reverse %}
@@ -249,6 +286,11 @@
       </div>
       {% endfor %}
     </div>
+  </section>
+
+  <section class="container py-0" id="footnote">
+<!--    <div class="col-12 py-4"><hr></div>-->
+    <div class="col-12 py-5" style="text-align: center;"><a href="#about"><i class="fa-solid fa-angles-up"></i>&nbsp;&nbsp;Back to the top.</a></div>
   </section>
 
 </div>

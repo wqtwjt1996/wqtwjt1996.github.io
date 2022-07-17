@@ -77,26 +77,18 @@ li {
   line-height: 1.8;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto';
+h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
-  color: #00274d;
+  color: #00274d !important;
 }
 
 h1 {
   font-size: 2rem;
   line-height: 3.5rem;
-  color: #00274d !important;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: #00274d !important;
 }
 
 h3 {
@@ -130,11 +122,9 @@ h3 {
   font-size: 2rem;
   color: #00274d !important;
   font-weight: 300;
-  font-family: 'Roboto';
 }
 .header-2 {
   font-weight: 300;
-  font-family: 'Roboto';
   font-size: 12pt;
 }
 
@@ -188,8 +178,6 @@ img::-moz-selection {
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
-  font-family: 'Roboto';
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -202,8 +190,7 @@ img::-moz-selection {
 }
 
 .img-profile {
-  /*max-width: 13rem;*/
-  /*max-height: 13rem;*/
+  max-width: 20rem;
   width: 100%;
   margin: auto;
   border-radius: 50%;
@@ -229,13 +216,11 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  /*font-weight: bold;*/
   color: #fff;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  /*font-size: 1rem;*/
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -298,16 +283,6 @@ img::-moz-selection {
   }
 }
 
-
-img {
-    opacity: 1.0;
-}
-
-img:hover {
-    opacity: 1.0;
-}
-
-
 .aspect-ratio {
   position: relative;
   width: 100%;
@@ -329,7 +304,6 @@ img:hover {
 .each_pub {
   padding-bottom: 10px;
   padding-top: 10px;
-  /*border-top: 1px solid rgba(20,20,20,0.1);*/
 }
 .each_exp {
   padding-bottom: 8px;
@@ -403,6 +377,13 @@ img:hover {
   transition-duration: 0s;
   cursor: pointer;
   opacity: 1;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden;
 }
 
 .button:hover {

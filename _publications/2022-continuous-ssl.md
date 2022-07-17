@@ -7,7 +7,9 @@ authors:
     - Abhinav
 venue:          European Conference on Computer Vision (ECCV), Tel Aviv, Israel, 2022.
 year:           "2022-03"
-thumbnail:      assets/publications/2022-streaming-ssl/thumbnail.gif
+highlight:      "Oral presentation"
+thumbnail:      assets/publications/2022-continuous-ssl/thumbnail.gif
 links:
     paper:      https://arxiv.org/abs/2203.12710
+    bibtex:     assets/publications/2022-continuous-ssl/ref.txt
 ---

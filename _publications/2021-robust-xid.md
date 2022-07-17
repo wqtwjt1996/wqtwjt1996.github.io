@@ -6,8 +6,8 @@ authors:
     - Ishan
     - Nuno
 venue:          IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR), 2021.
-highlight:      Oral presentation
 year:           "2021-03"
+highlight:      "Oral presentation"
 thumbnail:      assets/publications/2021-robust-xid/thumbnail.png
 links:
     pdf:    	assets/publications/2021-robust-xid/cvpr21-robust-xid.pdf
