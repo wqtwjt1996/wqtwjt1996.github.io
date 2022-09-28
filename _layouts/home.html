@@ -71,7 +71,7 @@
     <div class="row mx-auto mb-3">
       <div class="col-lg-3 col-sm-12 my-auto py-2 px-0">
         <div class="row">
-          <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile.jpg" alt="">
+          <img id="profilePhoto" class="img-fluid img-profile" src="/assets/images/profile.jpeg" alt="">
         </div>
       </div>
 
@@ -113,7 +113,6 @@
 
   <!-- News -->
   <section class="container lead" >
-<!--    <div class="col-12 py-4"><hr></div>-->
     <a class="anchor" id="news"></a>
     <h1 class="col-12 px-0">News</h1>
     <ul class="my-0">
@@ -146,7 +145,6 @@
 
   <!-- Publications -->
   <section class="container">
-<!--    <div class="col-12 py-4"><hr></div>-->
     <a class="anchor" id="publications"></a>
     <div class="row mx-auto">
       <h1 class="col-12 px-0">Publications</h1>
@@ -154,15 +152,17 @@
       {% for pub in sorted %}
       <div class="row each_pub">
         <div class="d-none d-md-block col-md-4 d-lg-block col-lg-4 pub-thumbnail" style="min-height: 100px">
+          <a href="{{ pub.url }}">
           {% if pub.thumb_width %}
           <img class="img-fluid px-3 py-2 center-thumb" width="{{ pub.thumb_width }}%" style="margin:0 auto;" src="{{ pub.thumbnail }}">
           {% else %}
           <img class="img-fluid px-3 py-2 center-thumb" src="{{ pub.thumbnail }}">
           {% endif %}
+          </a>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 pl-4">
           <div class="center-thumb">
-          <p class="pub_title">{{ pub.title }}</p>
+          <a href="{{ pub.url }}"><p class="pub_title">{{ pub.title }}</p></a>
           <p class="pub_author">
             {% for author in pub.authors %}
               {% if author.first %}
@@ -289,7 +289,6 @@
   </section>
 
   <section class="container py-0" id="footnote">
-<!--    <div class="col-12 py-4"><hr></div>-->
     <div class="col-12 py-5" style="text-align: center;"><a href="#about"><i class="fa-solid fa-angles-up"></i>&nbsp;&nbsp;Back to the top.</a></div>
   </section>
 

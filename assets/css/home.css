@@ -62,7 +62,7 @@ a {
 
 a:hover {
   opacity: 1.0;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 img.img-thumbnail {
@@ -385,6 +385,11 @@ a.anchor {
   top: -60px;
   visibility: hidden;
 }
+
+.pub_title:hover {
+   color :#00278D!important;
+   text-decoration: none!important;
+ }
 
 .button:hover {
   color: white;

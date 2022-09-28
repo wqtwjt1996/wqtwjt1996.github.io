@@ -1,5 +1,6 @@
 Me:
   name: Pedro Morgado
+  website: https://pedro-morgado.github.io/
 
 Nuno:
   name: Nuno Vasconcelos
@@ -16,6 +17,22 @@ Abhinav:
 Senthil:
   name: Senthil Purushwalkam
   website: http://www.cs.cmu.edu/~spurushw/
+
+Unnat:
+  name: Unnat Jain
+  website: https://unnat.github.io/
+
+Himangi:
+  name: Himangi Mittal
+  website: https://himangim.github.io/
+
+Jules:
+  name: Jules S. Jaffe
+  website: https://jjaffe.scrippsprofiles.ucsd.edu/
+
+Peter:
+  name: Peter J. S. Franks
+  website: https://pjfranks.scrippsprofiles.ucsd.edu/
 
 ShentongMo:
   name: Shentong Mo
