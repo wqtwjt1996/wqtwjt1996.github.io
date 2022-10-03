@@ -12,6 +12,7 @@ thumbnail:      assets/publications/2022-continuous-ssl/thumbnail.gif
 links:
     paper:      https://arxiv.org/abs/2203.12710
     code:       https://github.com/senthilps8/continuous_ssl_problem
+    video:      https://youtu.be/N8Kb6xBa0mg
     bibtex:     assets/publications/2022-continuous-ssl/ref.txt
 layout: project
 short_title: Continuous SSL

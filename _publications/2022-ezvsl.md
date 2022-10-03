@@ -8,6 +8,7 @@ thumbnail:      assets/publications/2022-ezvsl/ezvsl.gif
 links:
     paper:      https://arxiv.org/abs/2203.09324
     code:       https://github.com/stoneMo/EZ-VSL
+    video:      https://youtu.be/Jg7tCLPU1O8
     bibtex:     assets/publications/2022-ezvsl/ref.txt
 
 layout: project
