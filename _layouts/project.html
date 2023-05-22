@@ -31,6 +31,9 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
 
   <!-- Custom styles -->
   <link href="/assets/css/home.css" rel="stylesheet">
@@ -62,7 +65,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+            <a class="nav-link js-scroll-trigger" href="#page-top">Overview</a>
           </li>
           {% for nav_item in page.nav_items %}
           <li class="nav-item">
@@ -171,20 +174,24 @@
           <h4>Data</h4>
         </div>
         {% endif %}
-        {% if link[0] == 'bibtex' %}
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center">
-          <a href="../{{ link[1] }}" style="color:#00278D!important" target="_blank"><i class="fa fa-2x fa-bars mb-3"></i></a>
-          <h4>Bibtex</h4>
-        </div>
-        {% endif %}
       {% endfor %}
       </div>
+      {% if page.bibtex %}
+      <div class="row my-4 col-lg-8 col-md-10 col-sm-12 mx-auto" style="">
+        <h4 class="mx-auto">Bibtex</h4>
+        <p style="width: 100%; font-family: JetBrains Mono; font-size: 10pt; border: dashed; border-width: 1pt; background: #fbfdfd; border-color: #b3b3b3;  padding: 1em">{{ page.bibtex }}</p>
+      </div>
+      {% endif %}
     </section>
 
     {{ page.content }}
 
     <section id="footnote" class="mt-2">
-      <div class="row justify-content-center col-12 pb-5"><a href="#page-top"><i class="fa-solid fa-angles-up"></i>&nbsp;&nbsp;Back to the top.</a></div>
+      <div class="row justify-content-center col-12 pb-5">
+        <a href="#page-top"><i class="fa-solid fa-angles-up"></i>&nbsp;&nbsp;Back to the top</a>
+        &emsp;
+        <a href=".."><i class="fa-solid fa-home"></i>&nbsp;&nbsp;Back to home</a>
+      </div>
     </section>
 
   </div>

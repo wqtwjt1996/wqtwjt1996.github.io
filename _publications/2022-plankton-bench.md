@@ -5,6 +5,7 @@ authors:        [Kevin T. Le, Zhouyuan Yuan, Areeb Syed, Devin Ratelle, Eric C. 
 venue:          Frontiers in Marine Science, 2022.
 year:           "2022-06"
 thumbnail:      assets/publications/2022-plankton-bench/thumb.png
+bibtex:         "@InProceedings{le2022_plankton_bench,<br>&emsp;title={Benchmarking and Automating the Image Recognition Capability of an In Situ Plankton Imaging System},<br>&emsp;author={Kevin T. Le, Zhouyuan Yuan, Areeb Syed, Devin Ratelle, Eric C. Orenstein, Melissa L. Carter, Sarah Strang, Kasia M. Kenitz, Pedro Morgado, Peter J. S. Franks, Nuno Vasconcelos and Jules S. Jaffe},<br>&emsp;booktitle={Frontiers in Marine Science},<br>&emsp;year={2022}<br>}"
 links:
     paper:      https://www.frontiersin.org/articles/10.3389/fmars.2022.869088/full
     bibtex:     assets/publications/2022-plankton-bench/ref.txt

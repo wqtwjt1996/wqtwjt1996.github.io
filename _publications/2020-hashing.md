@@ -11,6 +11,7 @@ venue:          International Journal of Computer Vision (IJCV), 2020.
 year:           "2020-07"
 thumbnail:      assets/publications/2020-hashing/thumbnail.jpg
 thumb_width:    80
+bibtex:         "@article{MorgadoProxyHashing,<br>&emsp;author = {Morgado, Pedro and Li, Yunsheng and Costa Pereira, Jose and Saberian, Mohammad and Vasconcelos, Nuno},<br>&emsp;journal = {International Journal of Computer Vision},<br>&emsp;title = {Deep Hashing with Hash-Consistent Large Margin Proxy Embeddings},<br>&emsp;year = {2020},<br>&emsp;doi = {10.1007/s11263-020-01362-7},<br>&emsp;isbn = {1573-1405},<br>&emsp;url = {https://doi.org/10.1007/s11263-020-01362-7}<br>}"
 links:
     pdf:        assets/publications/2020-hashing/hashing.pdf
     pdf:        http://link.springer.com/article/10.1007/s11263-020-01362-7

@@ -5,6 +5,7 @@ authors:        [ShentongMo, Me]
 venue:          European Conference on Computer Vision (ECCV), Tel Aviv, Israel, 2022.
 year:           "2022-02"
 thumbnail:      assets/publications/2022-ezvsl/ezvsl.gif
+bibtex:         "@InProceedings{mo2022_ezvsl,<br>&emsp;title={Localizing Visual Sounds the Easy Way},<br>&emsp;author={Shentong Mo, Pedro Morgado},<br>&emsp;booktitle={European Conference on Computer Vision (ECCV)},<br>&emsp;year={2022}<br>}"
 links:
     paper:      https://arxiv.org/abs/2203.09324
     code:       https://github.com/stoneMo/EZ-VSL

@@ -10,6 +10,7 @@ authors:
 venue:          European Conference on Computer Vision (ECCV), <strike>Glasgow, UK</strike>, Virtual, 2020.
 year:           "2020-06"
 thumbnail:      assets/publications/2020-deep-rtc/thumbnail.jpg
+bibtex:         "@inproceedings{Wu20DeepRTC,<br>&emsp;title={Solving Long-tailed Recognition with Deep Realistic Taxonomic Classifier},<br>&emsp;author={Tz-Ying Wu and Pedro Morgado and Pei Wang and Chih-Hui Ho and Nuno Vasconcelos},<br>&emsp;booktitle={European Conference on Computer Vision (ECCV)},<br>&emsp;year={2020}<br>}"
 links:
     pdf:        assets/publications/2020-deep-rtc/paper.pdf
     paper:      https://arxiv.org/abs/2007.09898

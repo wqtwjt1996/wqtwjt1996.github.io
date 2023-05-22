@@ -8,6 +8,7 @@ authors:
 venue:          Neural Information Processing Systems (NeurIPS), 2020.
 year:           "2020-10"
 thumbnail:      assets/publications/2020-sptalign/thumbnail.jpg
+bibtex:         "@inproceedings{morgadoNIPS20,<br>&emsp;title={Learning Representations from Audio-Visual Spatial Alignment},<br>&emsp;author={Pedro Morgado, Yi Li, Nuno Vasconcelos},<br>&emsp;booktitle={Advances in Neural Information Processing Systems (NeurIPS)},<br>&emsp;year={2020}<br>}"
 links:
     pdf:        assets/publications/2020-sptalign/paper.pdf
     paper:      https://arxiv.org/abs/2011.01819

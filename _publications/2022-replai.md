@@ -5,6 +5,7 @@ authors:        [Himangi, Me, Unnat, Abhinav]
 venue:          Neural Information Processing Systems (NeurIPS), New Orleans, 2022.
 year:           "2022-08"
 thumbnail:      assets/publications/2022-replai/thumb.png
+bibtex:         "@InProceedings{mittal2022_replai,<br>&emsp;title={Learning Visual Representation from Audible Interactions},<br>&emsp;author={Himangi Mittal, Pedro Morgado, Unnat Jain, Abhinav Gupta},<br>&emsp;booktitle={Advances in Neural Information Processing Systems (NeurIPS)},<br>&emsp;year={2022}<br>}"
 links:
     paper:      https://arxiv.org/abs/2209.13583
     code:       https://github.com/HimangiM/RepLAI

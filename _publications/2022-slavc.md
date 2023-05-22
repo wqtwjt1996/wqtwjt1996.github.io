@@ -5,6 +5,7 @@ authors:        [ShentongMo, Me]
 venue:          Neural Information Processing Systems (NeurIPS), New Orleans, 2022.
 year:           "2022-08"
 thumbnail:      assets/publications/2022-slavc/framework.png
+bibtex:         "@InProceedings{mo2022_slavc,<br>&emsp;title={A Closer Look at Weakly-Supervised Audio-Visual Source Localization},<br>&emsp;author={Shentong Mo, Pedro Morgado},<br>&emsp;booktitle={Advances in Neural Information Processing Systems (NeurIPS)},<br>&emsp;year={2022}<br>}"
 links:
     paper:      https://arxiv.org/abs/2209.09634
     code:       https://github.com/stoneMo/SLAVC

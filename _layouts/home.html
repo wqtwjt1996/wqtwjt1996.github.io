@@ -14,14 +14,14 @@
     <meta property="og:url" content="https://pedro-morgado.github.io/">
     <meta property="og:type" content="website">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66337211-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZN6KELDKY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-66337211-1');
+        gtag('config', 'G-CZN6KELDKY');
     </script>
 
     <!-- Bootstrap and JQuery-->
@@ -32,6 +32,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
 
     <!-- Custom styles -->
     <link href="/assets/css/home.css" rel="stylesheet">
@@ -52,12 +55,12 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link js-scroll-trigger" href="#group">Group</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a>-->
-<!--        </li>-->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#group">Group</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
         </li>
@@ -88,8 +91,13 @@
           {% endfor %}
 
           <div class="header-2 mt-2">
+            <div class="collapse py-2" id="office"><b>Address:</b><br>{{ site.data.info.links["Office"] }}</div>
             {% for link in site.data.info.links %}
+            {% if link[0] == "Office" %}
+            <a data-toggle="collapse" href="#office" role="button" aria-expanded="false" aria-controls="collapse-office">{{ link[0] }}</a>
+            {% else %}
             <a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a>&emsp;
+            {% endif %}
             {% endfor %}
           </div>
         </div>
@@ -107,9 +115,9 @@
         Previously, I was a postdoc researcher at Carnegie Mellon University, working with <a href="http://www.cs.cmu.edu/~abhinavg/" target="_blank">Abhinav Gupta</a>.
         I completed my PhD at the University of California San Diego advised by <a href="http://www.svcl.ucsd.edu/~nuno/" target="_blank">Nuno Vasconcelos</a>, and both BSc and MSc degrees at Instituto Superior Técnico, Universidade de Lisboa, where I worked with <a href="http://users.isr.ist.utl.pt/~msilveira/" target="_blank">Margarida Silveira</a> and <a href="http://users.isr.ist.utl.pt/~jsm/" target="_blank">Jorge S Marques</a>.
       </p>
-      <p class="lead mb-2"><strong>
-        I am looking for highly motivated PhD and MS students to join the lab. If you are interested, please contact me.
-      </strong></p>
+<!--      <p class="lead mb-2"><strong>-->
+<!--        I am looking for highly motivated PhD and MS students to join the lab. If you are interested, please contact me.-->
+<!--      </strong></p>-->
     </div>
   </div>
 </section>
@@ -147,50 +155,50 @@
     }
 </script>
 
-<!-- Group -->
-<!--<section class="container lead" >-->
-<!--  <hr>-->
-<!--  <a class="anchor" id="group"></a>-->
-<!--  <h1 class="col-12 px-0 mb-0">Research Group</h1>-->
-<!--  <div class="row mx-auto">-->
-<!--    <div class="col-6 px-0">-->
-<!--      <h2 class="col-12 px-0 mb-1">PhD Students</h2>-->
-<!--      <ul class="my-0 px-2" style="list-style-type: none; ">-->
-<!--        {% for course in site.data.group.phd %}-->
-<!--        <li>{{ course }}</li>-->
-<!--        {% endfor %}-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--    <div class="col-6 px-0">-->
-<!--      <h2 class="col-12 px-0 mb-1">MSc/Undergrad Students</h2>-->
-<!--      <ul class="my-0 px-2" style="list-style-type: none; ">-->
-<!--        {% for course in site.data.group.msc %}-->
-<!--        <li>{{ course }}</li>-->
-<!--        {% endfor %}-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--    <div class="col-6 px-0">-->
-<!--      <h2 class="col-12 px-0 mb-1">External Student Collaborators</h2>-->
-<!--      <ul class="my-0 px-2" style="list-style-type: none; ">-->
-<!--        {% for course in site.data.group.collabs %}-->
-<!--        <li>{{ course }}</li>-->
-<!--        {% endfor %}-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
+<!-- Group-->
+<section class="container lead" >
+  <hr>
+  <a class="anchor" id="group"></a>
+  <h1 class="col-12 px-0 mb-0">Research Group</h1>
+  <div class="row mx-auto">
+    <div class="col-4 px-0">
+      <h2 class="col-12 px-0 mb-1">PhD Students</h2>
+      <ul class="my-0 px-2" style="list-style-type: none; ">
+        {% for course in site.data.group.phd %}
+        <li>{{ course }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-4 px-0">
+      <h2 class="col-12 px-0 mb-1">MSc/Undergrad Students</h2>
+      <ul class="my-0 px-2" style="list-style-type: none; ">
+        {% for course in site.data.group.msc %}
+        <li>{{ course }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-4 px-0">
+      <h2 class="col-12 px-0 mb-1">External Student Collaborators</h2>
+      <ul class="my-0 px-2" style="list-style-type: none; ">
+        {% for course in site.data.group.collabs %}
+        <li>{{ course }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
 
-<!-- Teaching -->
-<!--<section class="container lead" >-->
-<!--  <hr>-->
-<!--  <a class="anchor" id="teaching"></a>-->
-<!--  <h1 class="col-12 px-0 mb-0">Teaching</h1>-->
-<!--  <ul class="my-0 px-2" style="list-style-type: none; ">-->
-<!--    {% for course in site.data.teaching %}-->
-<!--    <li>{{ course }}</li>-->
-<!--    {% endfor %}-->
-<!--  </ul>-->
-<!--</section>-->
+<!-- Teaching-->
+<section class="container lead" >
+  <hr>
+  <a class="anchor" id="teaching"></a>
+  <h1 class="col-12 px-0 mb-0">Teaching</h1>
+  <ul class="my-0 px-2" style="list-style-type: none; ">
+    {% for course in site.data.teaching %}
+    <li>{{ course }}</li>
+    {% endfor %}
+  </ul>
+</section>
 
 <!-- Publications -->
 <section class="container">
@@ -200,6 +208,9 @@
     <h1 class="col-12 px-0 mb-0">Publications</h1>
     {% assign sorted = site.publications | sort: 'year' | reverse %}
     {% for pub in sorted %}
+    {% if pub.venue == "Under Review" %}
+    {% continue %}
+    {% endif %}
     <div class="row each_pub">
       <div class="d-none d-md-block col-md-4 d-lg-block col-lg-4 pub-thumbnail" style="min-height: 100px">
         <a href="{{ pub.url }}">
@@ -226,14 +237,13 @@
             {% assign author_info = site.data.people[author2] %}
             {% if author_info %}
               {% if author_info.website %}
-                <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}</a>
+                <a style="color:#063d96" href="{{ author_info.website }}">{{ author_info.name }}</a>{{ extra }}{% if forloop.last == false %},&nbsp{% endif %}
               {% else %}
                 {% if author2 == "Me" %}<b>{% endif %}{{ author_info.name }}{% if author2 == "Me" %}</b>{% endif %}
               {% endif %}
             {% else %}
-              {{ author2 }}
+              {{ author2 }}{{ extra }}{% if forloop.last == false %},&nbsp{% endif %}
             {% endif %}
-            {{ extra }}{% if forloop.last == false %},&nbsp{% endif %}
           {% endfor %}
         </p>
         <p class="pub_venue">{{ pub.venue }}</p>
@@ -241,10 +251,6 @@
           {% assign hasbib = False %}
           {% for link in pub.links %}
             {% if link[0] == "bibtex" %}
-              {% assign hasbib = True %} <!-- Bibtext -->
-              <a class="button button-{{link[0]}}" data-toggle="collapse" href="#collapse{{ pub.id }}" role="button" aria-expanded="false" aria-controls="collapse{{ pub.id }}">
-                {{ link[0] }}
-              </a>
             {% elsif link[0] == "pdf" %}
             {% else %} <!-- Other links -->
               <a class="button button-{{link[0]}}" href="{{ link[1] }}" target="_blank">
@@ -252,14 +258,21 @@
               </a>
             {% endif %}
           {% endfor %}
+
+
+          {% if pub.bibtex %}
+          <a class="button button-bibtex" data-toggle="collapse" href="#collapse{{ pub.id }}" role="button" aria-expanded="false" aria-controls="collapse{{ pub.id }}"> bibtex </a>
+          {% endif %}
+
           {% if pub.highlight %}
           <a class="pub_highlight">{{ pub.highlight }}</a>
           {% endif %}
+
           <!-- Add bitext content -->
-          {% if hasbib == True %}
+          {% if pub.bibtex %}
           <div class="collapse" id="collapse{{ pub.id }}">
-            <div class="card card-body">
-              <embed type="text/html" src="{{ pub.links.bibtex }}">
+            <div class="card card-body" style="border: dashed; border-width: 1pt; background: #fbfdff; border-color: #00274D; margin: 0.5em">
+              <p style="font-family: JetBrains Mono; font-size: 9pt; margin: 0">{{ pub.bibtex }}</p>
             </div>
           </div>
           {% endif %}
@@ -312,14 +325,19 @@
               </a>
             {% endif %}
           {% endfor %}
+
           {% if pub2.highlight %}
           <a class="pub_highlight">{{ pub2.highlight }}</a>
           {% endif %}
+
           <!-- Add bitext content -->
-          {% if hasbib2 == True %}
+          {% if pub2.links.bibtex %}
           <div class="collapse" id="collapse{{ pub.id }}2">
-            <div class="card card-body">
-              <embed type="text/html" src="{{ pub2.links.bibtex }}">
+<!--            <div class="card card-body">-->
+<!--              <embed type="text/html" src="{{ pub2.links.bibtex }}">-->
+<!--            </div>-->
+            <div class="card card-body" style="border: dashed; border-width: 1pt; background: #fbfdff; border-color: #00274D; margin: 0.5em">
+              <p style="font-family: JetBrains Mono; font-size: 9pt; margin: 0">{{ pub2.links.bibtex }}</p>
             </div>
           </div>
           {% endif %}
@@ -339,7 +357,9 @@
 </section>
 
 <section class="container py-0" id="footnote">
-  <div class="col-12 py-5" style="text-align: center;"><a href="#about"><i class="fa-solid fa-angles-up"></i>&nbsp;&nbsp;Back to the top.</a></div>
+  <div class="col-12 py-5" style="text-align: center;">
+    <a href="#about"><i class="fa-solid fa-angles-up"></i>&nbsp;&nbsp;Back to the top</a>
+  </div>
 </section>
 
 </div>

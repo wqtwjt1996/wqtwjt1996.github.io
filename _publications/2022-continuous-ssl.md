@@ -9,9 +9,11 @@ venue:          European Conference on Computer Vision (ECCV), Tel Aviv, Israel,
 year:           "2022-03"
 highlight:      "Oral presentation"
 thumbnail:      assets/publications/2022-continuous-ssl/thumbnail.gif
+bibtex:         "@InProceedings{purushwalkam2022_continuous_ssl,<br>&emsp;title={The Challenges of Continuous Self-Supervised Learning},<br>&emsp;author={Senthil Purushwalkam, Pedro Morgado, Abhinav Gupta},<br>&emsp;booktitle={European Conference on Computer Vision (ECCV)},<br>&emsp;year={2022}<br>}"
 links:
     paper:      https://arxiv.org/abs/2203.12710
     code:       https://github.com/senthilps8/continuous_ssl_problem
+    data:       https://github.com/senthilps8/continuous_ssl_problem/blob/main/datasets/DATA_PREPARATION.md
     video:      https://youtu.be/N8Kb6xBa0mg
     bibtex:     assets/publications/2022-continuous-ssl/ref.txt
 layout: project
