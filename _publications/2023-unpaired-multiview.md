@@ -11,9 +11,8 @@ venue:          International Conference on Computer Vision (ICCV), Paris, Franc
 year:           "2023-10"
 thumbnail:      assets/publications/2023-unpaired-multiview/title-image.png
 links:
-#    paper:      https://arxiv.org/abs/2209.09634
-#    code:       https://github.com/stoneMo/SLAVC
-#    bibtex:     assets/publications/2022-slavc/ref.txt
+   paper:      https://arxiv.org/abs/2308.11489
+   code:       https://github.com/wqtwjt1996/SUM-L
 
 layout: project
 short_title: Unpaired Multiview Alignment
