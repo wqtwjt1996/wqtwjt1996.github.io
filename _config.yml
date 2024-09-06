@@ -22,7 +22,7 @@ title: Qitong's homepage
 name: Qitong Wang
 email: wqtwjt@udel.edu
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://pedro-morgado.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wqtwjt1996.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  wqtwjt1996
 
 collections:
