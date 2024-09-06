@@ -1,9 +1,0 @@
-@article{zou2023learning,
-  title={Learning representational invariances for data-efficient action recognition},
-  author={Zou, Yuliang and Choi, Jinwoo and Wang, Qitong and Huang, Jia-Bin},
-  journal={Computer Vision and Image Understanding},
-  volume={227},
-  pages={103597},
-  year={2023},
-  publisher={Elsevier}
-}
