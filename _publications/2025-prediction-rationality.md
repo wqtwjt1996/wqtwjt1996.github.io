@@ -8,7 +8,7 @@ authors:
     - Xi
 venue:          Association for the Advancement of Artificial Intelligence (AAAI), Philadelphia, Pennsylvania, USA, 2025.
 year:           "2025-02"
-thumbnail:      assets/images/coming_soon_2.jpg
+thumbnail:      assets/images/coming_soon_2.JPG
 layout: project_small
 short_title: Prediction Rationality
 ---
