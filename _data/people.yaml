@@ -21,7 +21,17 @@ Ting:
 Xi:
   name: Xi Peng
   institution: University of Delaware
-  website: https://sites.google.com/site/xipengcshomepage/home
+  website: https://deep-real.github.io/dr_xipeng.html
+
+Tang:
+  name: Tang Li
+  institution: University of Delaware
+  website: https://tangli0305.github.io/
+
+Kien:
+  name: Kien X. Nguyen
+  institution: University of Delaware
+  website: https://nyquixt.github.io/profile/
 
 Yuliang:
   name: Yuliang Zou
