@@ -1,0 +1,7 @@
+@InProceedings{Wang_2025_Rationale,
+	author = {Wang, Qitong and Li, Tang and Nguyen, Kien X. and Peng, Xi},
+	title = {Beyond Accuracy: On the Effects of Fine-tuning Towards Vision-Language Model's Prediction Rationality},
+	booktitle = {In Proceedings of the Association for the Advancement of Artificial Intelligence (AAAI)},
+	month = {February},
+	year = {2025}
+}
