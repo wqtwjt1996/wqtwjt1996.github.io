@@ -150,8 +150,21 @@
   {% endfor %}
   </ul>
   </span>
-  <!-- <a href="javascript:;" onclick="showMoreNews()" id="moreNewsBtn" class="my-2 px-4">--- show more ---</a> -->
+  <a href="javascript:;" onclick="showMoreNews()" id="moreNewsBtn" class="my-2 px-4">--- show more ---</a>
 </section>
+<script>
+    function showMoreNews() {
+        var moreNewsTxt = document.getElementById("moreNews");
+        var moreNewsBtn = document.getElementById("moreNewsBtn");
+        if (moreNewsTxt.style.display === "none") {
+            moreNewsBtn.innerHTML = "--- show less ---";
+            moreNewsTxt.style.display = "inline";
+        } else {
+            moreNewsBtn.innerHTML = "--- show more ---";
+            moreNewsTxt.style.display = "none";
+        }
+    }
+</script>
 
 <!-- Publications -->
 <section class="container">
