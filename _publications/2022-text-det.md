@@ -16,6 +16,7 @@ thumbnail:      assets/publications/2022-text-det/PFM_2_Final.png
 bibtex: "@article{wang2022region,<br>&emsp;title={Region-aware Arbitrary-shaped Text Detection with Progressive Fusion},<br>&emsp;author={Wang, Qitong and Fu, Bin and Li, Ming and He, Junjun and Peng, Xi and Qiao, Yu},<br>&emsp;journal={IEEE Transactions on Multimedia},<br>&emsp;year={2022},<br>&emsp;publisher={IEEE}<br>}"
 links:
    paper:      https://ieeexplore.ieee.org/document/9850390
+   code:     https://github.com/wqtwjt1996/RP-Text
    bibtex:     assets/publications/2022-text-det/ref.txt
 
 layout: project_plus
