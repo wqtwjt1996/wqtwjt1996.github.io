@@ -1,0 +1,6 @@
+@InProceedings{Wang_2025_MO_SAM,
+	author = {Wang, Qitong and Chinkaka, Emmanuel and Richaud, Romain and Haghdadi, Mehrnaz and Wolk, Coryn and Oromeng, Kopo and Davis, Kyle and Bianco, Federica and Peng, Xi and Klinger, Julie},
+	title = {MO-SAM: Testing the reliability and limits of mine feature delineation using Segment Anything Model to democratize mine observation and research},
+	booktitle = {PLOS Sustainability and Transformation},
+	year = {2025}
+}
