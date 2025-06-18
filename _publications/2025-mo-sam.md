@@ -19,6 +19,6 @@ bibtex: "@article{Wang_2025_MO_SAM,<br>&emsp;author    = {Wang, Qitong and Chink
 links:
    code:       https://github.com/deep-real/MO-SAM
    bibtex:     assets/publications/2025-mo-sam/ref.txt
-layout: project_mo_sam
+layout: project_small
 short_title: MO-SAM
 ---
