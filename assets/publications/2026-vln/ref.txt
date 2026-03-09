@@ -1,0 +1,6 @@
+@article{Wang_2026_VLA_Navigation,
+	author = {Wang, Qitong and Liang, Yijun and Li, Ming and Zhou, Tianyi and Rasmussen, Christopher},
+	title = {History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation},
+	journal={arXiv preprint arXiv:2603.06480},
+	year = {2026}
+}

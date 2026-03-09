@@ -1,0 +1,7 @@
+@InProceedings{Wang_2026_ICLR_Workshops,
+	author = {Wang, Qitong and Dai, Haoran and Zhang, Haotian and Rasmussen, Christopher and Wang, Binghui},
+	title = {When One Modality Rules Them All: Backdoor Modality Collapse in Multimodal Diffusion Models},
+	booktitle = {The Fourteenth International Conference on Learning Representations (ICLR) Workshops},
+	month = {April},
+	year = {2026}
+}
