@@ -55,8 +55,8 @@ Bin:
 
 Ming:
   name: Ming Li
-  institution: Texas A&M University
-  website: https://www.linkedin.com/in/ming-li-405782231/
+  institution: University of Maryland, College Park
+  website: https://mingliiii.github.io/
 
 Junjun:
   name: Junjun He
@@ -76,7 +76,7 @@ Yi:
 Margrit:
   name: Margrit Betke
   institution: Boston University
-  website: https://www.bu.edu/cds-faculty/2025/08/15/in-memory-of-bu-professor-margrit-betke/
+  website: https://www.cs.bu.edu/faculty/betke/
 
 Emmanuel:
   name: Emmanuel Chinkaka
@@ -85,35 +85,65 @@ Emmanuel:
 
 Romain:
   name: Romain Richaud
-  institution: University of Delaware
+  instituion: University of Delaware
   website: https://www.linkedin.com/in/romain-richaud-649aa0ab/
 
 Mehrnaz:
   name: Mehrnaz Haghdadi
-  institution: University of Delaware
+  instituion: University of Delaware
   website: https://scholar.google.com/citations?user=xvIu6PEAAAAJ&hl=en
 
 Coryn:
   name: Coryn Wolk
-  institution: University of Delaware
+  instituion: University of Delaware
   website: https://www.linkedin.com/in/coryn-wolk-3b56b065/
 
 Kopo:
   name: Kopo V. Oromeng
-  institution: University of Delaware
+  instituion: University of Delaware
   website: https://www.linkedin.com/in/kopooromeng/
 
 Kyle:
   name: Kyle Frankel Davis
-  institution: University of Delaware
+  instituion: University of Delaware
   website: https://www.udel.edu/academics/colleges/ceoe/departments/gss/faculty/kyle-davis/
 
 Federica:
   name: Federica Bianco
-  institution: University of Delaware
+  instituion: University of Delaware
   website: https://fbb.space/
 
 Julie:
   name: Julie Michelle Klinger
-  institution: University of Delaware
+  instituion: University of Delaware
   website: https://en.wikipedia.org/wiki/Julie_Michelle_Klinger
+
+Haoran:
+  name: Haoran Dai
+  instituion: Illinois Institute of Technology
+  website: https://openreview.net/profile?id=%7EHaoran_Dai3
+
+Haotian:
+  name: Haotian Zhang
+  instituion: Columbia University
+  website: https://htplex.io/blog/hello
+
+Christopher:
+  name: Christopher Rasmussen
+  instituion: University of Delaware
+  website: https://www.cis.udel.edu/people/faculty/christopher-rasmussen/
+
+Binghui:
+  name: Binghui (Alan) Wang
+  instituion: Illinois Institute of Technology
+  website: https://wangbinghui.net/
+
+Yijun:
+  name: Yijun Liang
+  instituion: University of Maryland, College Park
+  website: https://openreview.net/profile?id=~Yijun_Liang1
+
+Tianyi:
+  name: Tianyi Zhou
+  instituion: Mohamed bin Zayed University of Artificial Intelligence
+  website: https://tianyizhou.github.io/
