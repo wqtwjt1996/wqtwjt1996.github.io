@@ -1,0 +1,6 @@
+@InProceedings{Wang_2026_DCP,
+	author = {Wang, Qitong and Du, Fan and Maneriker, Pranav and Jin, Jihui and Rasmussen, Christopher},
+	title = {Toward Low-Latency Vision-Language Models with Doubly-Correct Predictions in Egocentric Visual Understanding},
+	booktitle ={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+	year = {2026}
+}
