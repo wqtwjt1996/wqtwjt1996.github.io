@@ -1,0 +1,6 @@
+@InProceedings{Wang_2026_Video,
+	author = {Wang, Qitong and Jin, Jihui and Kothandaraman, Divya and Raj, Vishnu and Rasmussen, Christopher},
+	title = {Transfer Once, Ask Locally: Compact Audio-Visual Memory for On-Device Question Answering},
+	booktitle ={arXiv preprint},
+	year = {2026}
+}
