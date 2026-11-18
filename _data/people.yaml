@@ -70,8 +70,8 @@ Yu:
 
 Yi:
   name: Yi Zheng
-  institution: Boston University
-  website: https://cs-people.bu.edu/yizheng/
+  institution: Thales
+  website: https://gsws.github.io/
 
 Margrit:
   name: Margrit Betke
@@ -115,7 +115,7 @@ Federica:
 
 Julie:
   name: Julie Michelle Klinger
-  instituion: University of Delaware
+  instituion: University of Wisconsin-Madison
   website: https://en.wikipedia.org/wiki/Julie_Michelle_Klinger
 
 Haoran:
@@ -162,3 +162,13 @@ Jihui:
   name: Jihui Jin
   instituion: Dolby Laboratories Inc.
   website: https://www.linkedin.com/in/jihui-jin-4aa111112/
+
+Divya:
+  name: Divya Kothandaraman
+  instituion: Dolby Laboratories Inc.
+  website: https://www.linkedin.com/in/divyakraman/
+
+Vishnu:
+  name: Vishnu Raj
+  instituion: Dolby Laboratories Inc.
+  website: https://rajvishnu.in/
